@@ -1,0 +1,8 @@
+.studentPic {
+  background-image: url('https://img.freepik.com/free-photo/front-view-female-student-black-jacket-wearing-backpack-holding-file-with-copybooks-blue-wall-college-university-lessons_140725-43327.jpg?size=626&ext=jpg&ga=GA1.1.892439661.1695733004&semt=ais');
+  height: 550px;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  display: block;
+  background-size: cover;
+}
