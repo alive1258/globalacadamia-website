@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiTwotonePhone } from 'react-icons/ai'
 import { PiGraduationCap } from 'react-icons/pi'
+import tour3 from '../../../assets/image/tour3.avif'
 
 const CampusTour = () => {
   return (
@@ -17,11 +18,7 @@ const CampusTour = () => {
         <div className="pt-20 grid md:grid-cols-2 grid-cols-1 gap-8">
           <div class="grid md:grid-rows-4 md:grid-flow-col gap-4">
             <div class="row-span-4 ">
-              <img
-                className="h-full w-full rounded-lg"
-                src="https://img.freepik.com/free-photo/medium-shot-teenage-boy-showing-peace-sign_23-2148225273.jpg?size=626&ext=jpg&ga=GA1.1.892439661.1695733004&semt=ais"
-                alt=""
-              />
+              <img className="h-full w-full rounded-lg" src={tour3} alt="" />
             </div>
             <div class="row-span-2  ">
               <img

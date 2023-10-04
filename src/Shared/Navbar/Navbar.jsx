@@ -48,9 +48,12 @@ const Navbar = () => {
             <Link to="/">
               <img className="w-16 h-12 cursor-pointer" src={logoGA} alt="" />
             </Link>
-            <h1 className="text-xl text-[#09adfe] font-bold ">
-              Global Acadamia
-            </h1>
+            <div>
+              <h1 className="text-xl text-[#09adfe] font-bold ">
+                Global Acadamia
+              </h1>
+              <p className=" text-yellow-400">Education Consultants</p>
+            </div>
           </div>
 
           {/* nav item  */}
@@ -91,7 +94,7 @@ const Navbar = () => {
           className={
             !nav
               ? 'hidden'
-              : 'absolute z-10 bg-[#ffffff] font-semibold w-full  h-screen md:hidden px-6 pt-4'
+              : 'absolute z-10 bg-[#e8e7e7] font-semibold w-full  h-screen md:hidden px-6 pt-4'
           }
         >
           <ul className="menu space-y-4  font-bold gap-[2.7rem]">
