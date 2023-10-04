@@ -75,7 +75,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <NavLink to="/">
+                <NavLink to="/contact">
                   <button className="bg-[#09adfe] text-[#ffffff] text-[14px] py-2 px-5 rounded-lg">
                     Admission Open
                   </button>
@@ -113,6 +113,13 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
+            <li>
+              <NavLink to="/contact">
+                <button className="bg-[#09adfe] text-[#ffffff] text-[14px] py-2 px-5 rounded-lg">
+                  Admission Open
+                </button>
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

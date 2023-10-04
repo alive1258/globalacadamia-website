@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaRegShareSquare } from 'react-icons/fa'
-import chinaAbroad1 from '../../../assets/image/chinaAbroad1.avif'
+import chinaAbroad1 from '../../../assets/image/chinaAbroad2.jpg'
 import { PiGraduationCap } from 'react-icons/pi'
 
 const ChinaAbroad = () => {

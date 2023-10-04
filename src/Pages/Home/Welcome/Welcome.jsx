@@ -2,6 +2,7 @@ import React from 'react'
 import { PiGraduationCap, PiStudentDuotone } from 'react-icons/pi'
 import { FaUniversity, FaFileInvoiceDollar } from 'react-icons/fa'
 import { BiBookBookmark } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 const Welcome = () => {
   return (
@@ -40,24 +41,28 @@ const Welcome = () => {
             </div>
           </div>
           {/* Scholarship  */}
-          <div className="bg-[#282d36] px-6 py-3 flex  items-center gap-8 hover:bg-black cursor-pointer">
-            <div>
-              <FaFileInvoiceDollar size={65} className="text-[#09adfe]" />
-            </div>
-            <div className="text-2xl font-bold text-[#ffffff]">
-              <h2>100%</h2>
-              <h1>Scholarship</h1>
-            </div>
+          <div className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer">
+            <Link to="/scholarship" className="flex  items-center  gap-8">
+              <div>
+                <FaFileInvoiceDollar size={65} className="text-[#09adfe]" />
+              </div>
+              <div className="text-2xl font-bold text-[#ffffff]">
+                <h2>100%</h2>
+                <h1>Scholarship</h1>
+              </div>
+            </Link>
           </div>
           {/* Visa Success  */}
-          <div className="bg-[#282d36] px-6 py-3 flex  items-center gap-8 hover:bg-black cursor-pointer">
-            <div>
-              <BiBookBookmark size={70} className="text-[#09adfe]" />
-            </div>
-            <div className="text-2xl font-bold text-[#ffffff]">
-              <h2>100%</h2>
-              <h1>Visa Success</h1>
-            </div>
+          <div className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer">
+            <Link to="/services" className="flex  items-center  gap-8">
+              <div>
+                <BiBookBookmark size={70} className="text-[#09adfe]" />
+              </div>
+              <div className="text-2xl font-bold text-[#ffffff]">
+                <h2>100%</h2>
+                <h1>Visa Success</h1>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
