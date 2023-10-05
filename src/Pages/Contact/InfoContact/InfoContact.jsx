@@ -1,17 +1,17 @@
 import React from 'react'
-import sholarship3 from '../../../assets/image/scholarship3.avif'
+import contact from '../../../assets/image/contact1.avif'
 import { AiFillYoutube, AiTwotonePhone } from 'react-icons/ai'
 import { RiHomeOfficeFill } from 'react-icons/ri'
-import { FaCentos, FaFacebookF } from 'react-icons/fa'
+import { FaFacebookF } from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
-import { GrContact } from 'react-icons/gr'
 import { BiLogoLinkedin } from 'react-icons/bi'
+import { MdContactMail, MdOutlineMailOutline } from 'react-icons/md'
 
 const InfoContact = () => {
   return (
     <div className="container px-6">
       <div>
-        <h1 className="md:text-3xl text-xl text-center font-bold tet text-[#000]">
+        <h1 className="md:text-3xl text-2xl text-center font-bold tet text-[#000]">
           Connect with Global Academia
         </h1>
         <div className="flex pt-2 items-center justify-center gap-2">
@@ -49,7 +49,7 @@ const InfoContact = () => {
                   <span>
                     <RiHomeOfficeFill />
                   </span>{' '}
-                  Bangladesh Office
+                  Contact Information
                 </div>
                 <div className="pl-6 space-y-1">
                   <div className="flex items-center gap-2">
@@ -60,8 +60,13 @@ const InfoContact = () => {
                     <AiTwotonePhone size={20} className="text-[#09adfe]" />
                     +88 01799731158
                   </div>
-
-                  <p>info@gmail.con</p>
+                  <div className="flex items-center gap-2">
+                    <MdOutlineMailOutline
+                      size={20}
+                      className="text-[#09adfe]"
+                    />
+                    globalacadamia@gmail.com
+                  </div>
                 </div>
 
                 <div className="flex pt-3 gap-4">
@@ -89,8 +94,8 @@ const InfoContact = () => {
           </h1>
           <div className="space-y-2 pt-3">
             <div className="flex gap-3">
-              <span className="pt-1">
-                <GrContact className="text-[#09adfe]" size={20} />
+              <span className="pt-1 ">
+                <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
                 Our commitment to providing quality education knows no borders,
@@ -101,7 +106,7 @@ const InfoContact = () => {
             </div>
             <div className="flex gap-3">
               <span className="pt-1">
-                <GrContact className="text-[#09adfe]" size={20} />
+                <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
                 We appreciate your interest in Global Academia's research
@@ -112,7 +117,7 @@ const InfoContact = () => {
             </div>
             <div className="flex gap-3">
               <span className="pt-1">
-                <GrContact className="text-[#09adfe]" size={20} />
+                <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
                 We value your feedback and inquiries at Global Academia. Feel
@@ -125,7 +130,7 @@ const InfoContact = () => {
         {/* image traverl  */}
         <div className="">
           <img
-            src={sholarship3}
+            src={contact}
             className="md:h-[490px] w-full rounded-lg"
             alt=""
           />

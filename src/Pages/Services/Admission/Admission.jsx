@@ -1,9 +1,9 @@
 import React from 'react'
 import { PiGraduationCap } from 'react-icons/pi'
-import v1 from '../../../assets/image/v1.jpg'
-import v2 from '../../../assets/image/v2.jpg'
-import v3 from '../../../assets/image/v3.jpg'
-import v4 from '../../../assets/image/v4.jpeg'
+import v1 from '../../../assets/image/varsity1.avif'
+import v2 from '../../../assets/image/versity2.avif'
+import v3 from '../../../assets/image/varsity3.jpg'
+import v4 from '../../../assets/image/varsity4.avif'
 
 const Admission = () => {
   return (
@@ -29,28 +29,28 @@ const Admission = () => {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               <div>
                 <img
-                  className="h-[240px] w-[310px] rounded-lg"
+                  className="md:h-[240px] md:w-[310px] rounded-lg"
                   src={v1}
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="h-[240px] w-[310px] rounded-lg"
+                  className="md:h-[240px] md:w-[310px] rounded-lg"
                   src={v2}
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="h-[240px] w-[310px] rounded-lg"
+                  className="md:h-[240px] md:w-[310px] rounded-lg"
                   src={v3}
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  className="h-[240px] w-[310px] rounded-lg  "
+                  className="md:h-[240px] md:w-[310px] rounded-lg  "
                   src={v4}
                   alt=""
                 />

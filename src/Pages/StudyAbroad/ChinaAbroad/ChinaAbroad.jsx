@@ -10,7 +10,7 @@ const ChinaAbroad = () => {
         {/*         Travel Support for Students  title*/}
 
         <div>
-          <h1 className="md:text-3xl text-xl text-center font-bold tet text-[#000]">
+          <h1 className="md:text-3xl text-2xl text-center font-bold tet text-[#000]">
             Explore Education in China
           </h1>
           <div className="flex pt-2 items-center justify-center gap-2">

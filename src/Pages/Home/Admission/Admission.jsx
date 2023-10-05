@@ -1,22 +1,25 @@
 import React from 'react'
 import './Admission.css'
 import { AiTwotonePhone } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Admission = () => {
   const currentYear = new Date().getFullYear()
   return (
     <>
-      <div className="my-14 ">
+      <div className="md:my-14 ">
         <div className="studentPic bg-fixed  ">
-          <div className=" px-6 pt-24  bg-slate-500 bg-opacity-50 h-full">
+          <div className="px-6 pt-24  bg-slate-500 bg-opacity-50 h-full">
             <div className="container">
               <h1 className="text-white md:text-2xl text-xl font-bold">
                 Admission is Going On {currentYear}
               </h1>
               <div className="mt-4">
-                <button className="bg-[#09adfe] text-[#ffffff] text-lg py-2 px-5 rounded-lg">
-                  Register for Free consultation
-                </button>
+                <Link to="/contact">
+                  <button className="bg-[#09adfe] text-[#ffffff] text-lg py-2 px-5 rounded-lg">
+                    Register for Free consultation
+                  </button>
+                </Link>
               </div>
               {/* -------phone------  */}
               <div className="flex items-center gap-2 mt-4 text-[#ffffff]">

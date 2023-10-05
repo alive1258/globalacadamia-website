@@ -10,7 +10,7 @@ const MasterScholarship = () => {
         {/*         Travel Support for Students  title*/}
 
         <div>
-          <h1 className="md:text-3xl text-xl text-center font-bold tet text-[#000]">
+          <h1 className="md:text-3xl text-2xl text-center font-bold tet text-[#000]">
             Scholarship for Master Students
           </h1>
           <div className="flex pt-2 items-center justify-center gap-2">
@@ -108,7 +108,7 @@ const MasterScholarship = () => {
 
         {/* scholarship Facilities  */}
         <div className="py-20">
-          <h1 className="text-3xl font-bold">
+          <h1 className="md:text-3xl text-2xl font-bold">
             Scholarship Support for Master Students
           </h1>
           <div className="pt-7 space-y-3 text-lg font-medium">

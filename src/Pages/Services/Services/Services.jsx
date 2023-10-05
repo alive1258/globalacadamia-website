@@ -10,20 +10,11 @@ const Services = () => {
   return (
     <>
       <Banner />
-
       <VisaProcess />
       <TravelSupport />
       <TopUniversity />
       <Admission />
       <Guideline />
-      {/* <p>Admission</p> */}
-      {/* <p>financial-assistantion.</p>
-      <p>manage-scholarship</p>
-      <p>/student-assessment.</p>
-      <p>Guideline/ Counseling</p> */}
-      {/* <p>Guideline to Visa Process</p> */}
-      {/* <p>Travel Assistance</p> */}
-      {/* <p>Pre-Departure Orientation</p> */}
     </>
   )
 }
