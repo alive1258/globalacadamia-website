@@ -5,6 +5,10 @@ import { BiBookBookmark } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
 const Welcome = () => {
+  const topFunction = () => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
   return (
     <>
       <div className="">
@@ -19,29 +23,43 @@ const Welcome = () => {
         </div>
         <div className="mt-10 grid md:grid-cols-4 grid-cols-1 gap-3  px-6 container">
           {/* Students  */}
-          <div className="bg-[#282d36] px-6 py-3 flex  items-center gap-8 hover:bg-black cursor-pointer">
-            <div>
-              <PiStudentDuotone size={80} className="text-[#09adfe]" />
-            </div>
-            <div className="text-2xl font-bold text-[#ffffff]">
-              <h2>300+</h2>
-              <h1>Students</h1>
-            </div>
+
+          <div
+            onClick={topFunction}
+            className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer"
+          >
+            <Link to="/about" className="flex  items-center  gap-8">
+              <div>
+                <PiStudentDuotone size={65} className="text-[#09adfe]" />
+              </div>
+              <div className="text-2xl font-bold text-[#ffffff]">
+                <h2>300+</h2>
+                <h1>Students</h1>
+              </div>
+            </Link>
           </div>
 
           {/* University  */}
 
-          <div className="bg-[#282d36] px-6 py-3 flex  items-center gap-8 hover:bg-black cursor-pointer">
-            <div>
-              <FaUniversity size={70} className="text-[#09adfe]" />
-            </div>
-            <div className="text-2xl font-bold text-[#ffffff]">
-              <h2>150+</h2>
-              <h1>University</h1>
-            </div>
+          <div
+            onClick={topFunction}
+            className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer"
+          >
+            <Link to="/study" className="flex  items-center  gap-8">
+              <div>
+                <FaUniversity size={65} className="text-[#09adfe]" />
+              </div>
+              <div className="text-2xl font-bold text-[#ffffff]">
+                <h2>150+</h2>
+                <h1>University</h1>
+              </div>
+            </Link>
           </div>
           {/* Scholarship  */}
-          <div className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer">
+          <div
+            onClick={topFunction}
+            className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer"
+          >
             <Link to="/scholarship" className="flex  items-center  gap-8">
               <div>
                 <FaFileInvoiceDollar size={65} className="text-[#09adfe]" />
@@ -53,7 +71,10 @@ const Welcome = () => {
             </Link>
           </div>
           {/* Visa Success  */}
-          <div className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer">
+          <div
+            onClick={topFunction}
+            className="bg-[#282d36] px-6 py-3  hover:bg-black cursor-pointer"
+          >
             <Link to="/services" className="flex  items-center  gap-8">
               <div>
                 <BiBookBookmark size={70} className="text-[#09adfe]" />

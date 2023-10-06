@@ -2,8 +2,16 @@ import React from 'react'
 import { AiTwotonePhone } from 'react-icons/ai'
 import { PiGraduationCap } from 'react-icons/pi'
 import tour3 from '../../../assets/image/tour3.avif'
+import tour1 from '../../../assets/image/versity2.avif'
+import tour2 from '../../../assets/image/varsity1.avif'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const CampusTour = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="container px-6 py-20">
@@ -18,19 +26,29 @@ const CampusTour = () => {
         <div className="pt-20 grid md:grid-cols-2 grid-cols-1 gap-8">
           <div class="grid md:grid-rows-4 md:grid-flow-col gap-4">
             <div class="row-span-4 ">
-              <img className="h-full w-full rounded-lg" src={tour3} alt="" />
+              <img
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                className="h-full w-full rounded-lg"
+                src={tour3}
+                alt=""
+              />
             </div>
             <div class="row-span-2  ">
               <img
+                data-aos="zoom-in"
+                data-aos-duration="1500"
                 className="h-full w-full rounded-lg"
-                src="https://img.freepik.com/free-photo/closeup-shot-two-domed-towers-old-royal-naval-college-greenwich-london_181624-44376.jpg?size=626&ext=jpg&ga=GA1.1.892439661.1695733004&semt=ais"
+                src={tour1}
                 alt=""
               />
             </div>
             <div class="row-span-2 ">
               <img
+                data-aos="zoom-in"
+                data-aos-duration="1500"
                 className="h-full w-full rounded-lg"
-                src="https://img.freepik.com/free-photo/street-view-frankfurt-downtown-germany_1268-20879.jpg?size=626&ext=jpg&ga=GA1.1.892439661.1695733004&semt=ais"
+                src={tour2}
                 alt=""
               />
             </div>

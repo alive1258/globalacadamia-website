@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Admission.css'
 import { AiTwotonePhone } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Admission = () => {
   const currentYear = new Date().getFullYear()
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="md:my-14 ">
         <div className="studentPic bg-fixed  ">
-          <div className="px-6 pt-24  bg-slate-500 bg-opacity-50 h-full">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="px-6 pt-24  bg-slate-500 bg-opacity-50 h-full"
+          >
             <div className="container">
               <h1 className="text-white md:text-2xl text-xl font-bold">
                 Admission is Going On {currentYear}

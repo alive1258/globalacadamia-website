@@ -2,12 +2,22 @@ import React from 'react'
 import Marquee from 'react-fast-marquee'
 import MarquereVarsity from './MarquereVarsity'
 import { PiGraduationCap } from 'react-icons/pi'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const TopUniversity = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="container mt-28 pb-20">
-        <div>
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <h1 className="text-3xl text-center text-[#000] font-bold">
             Top University
           </h1>

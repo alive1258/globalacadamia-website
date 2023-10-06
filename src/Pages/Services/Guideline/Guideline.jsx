@@ -2,8 +2,14 @@ import React from 'react'
 import { PiGraduationCap } from 'react-icons/pi'
 import { RiGuideLine } from 'react-icons/ri'
 import gideline from '../../../assets/image/gideline2.avif'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Guideline = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="container px-6 md:py-24 py-8">
@@ -90,6 +96,8 @@ const Guideline = () => {
           {/* image  */}
           <div>
             <img
+              data-aos="flip-up"
+              data-aos-duration="1500"
               src={gideline}
               className="md:h-[430px] w-full rounded-lg"
               alt=""

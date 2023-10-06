@@ -5,9 +5,19 @@ import { RiHomeOfficeFill } from 'react-icons/ri'
 import { FaFacebookF } from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
 import { BiLogoLinkedin } from 'react-icons/bi'
-import { MdContactMail, MdOutlineMailOutline } from 'react-icons/md'
+import {
+  MdContactMail,
+  MdOutlineContactPhone,
+  MdOutlineMailOutline,
+} from 'react-icons/md'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const InfoContact = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div className="container px-6">
       <div>
@@ -47,7 +57,7 @@ const InfoContact = () => {
               <div className="pt-3">
                 <div className="text-lg font-bold text-[#09adfe] flex items-center gap-2">
                   <span>
-                    <RiHomeOfficeFill />
+                    <MdOutlineContactPhone />
                   </span>{' '}
                   Contact Information
                 </div>
@@ -94,7 +104,12 @@ const InfoContact = () => {
           </h1>
           <div className="space-y-2 pt-3">
             <div className="flex gap-3">
-              <span className="pt-1 ">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1 "
+              >
                 <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
@@ -105,7 +120,12 @@ const InfoContact = () => {
               </p>
             </div>
             <div className="flex gap-3">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
@@ -116,7 +136,12 @@ const InfoContact = () => {
               </p>
             </div>
             <div className="flex gap-3">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
@@ -130,6 +155,8 @@ const InfoContact = () => {
         {/* image traverl  */}
         <div className="">
           <img
+            data-aos="zoom-in"
+            data-aos-duration="1500"
             src={contact}
             className="md:h-[490px] w-full rounded-lg"
             alt=""

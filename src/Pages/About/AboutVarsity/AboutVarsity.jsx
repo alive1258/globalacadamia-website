@@ -4,8 +4,14 @@ import v1 from '../../../assets/image/varsity1.avif'
 import v2 from '../../../assets/image/versity2.avif'
 import v3 from '../../../assets/image/varsity3.jpg'
 import v4 from '../../../assets/image/varsity4.avif'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const AboutVarsity = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="container px-6 py-10">
@@ -26,6 +32,8 @@ const AboutVarsity = () => {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               <div>
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
                   className="md:h-[200px] md:w-[310px] rounded-lg"
                   src={v2}
                   alt=""
@@ -33,6 +41,8 @@ const AboutVarsity = () => {
               </div>
               <div>
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
                   className="md:h-[200px] md:w-[310px] rounded-lg"
                   src={v3}
                   alt=""
@@ -40,6 +50,8 @@ const AboutVarsity = () => {
               </div>
               <div>
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
                   className="md:h-[200px] md:w-[310px] rounded-lg"
                   src={v4}
                   alt=""
@@ -47,6 +59,8 @@ const AboutVarsity = () => {
               </div>
               <div>
                 <img
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
                   className="md:h-[200px] md:w-[310px] rounded-lg  "
                   src={v1}
                   alt=""

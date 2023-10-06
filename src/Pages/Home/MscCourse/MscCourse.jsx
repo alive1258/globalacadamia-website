@@ -6,6 +6,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './MscCourse.css'
 import CourseCard from '../../../components/homePage/CourseCard'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const BscCourse = () => {
   // render()
@@ -61,10 +63,16 @@ const BscCourse = () => {
     fetch('courses.json')
       .then(res => res.json())
       .then(data => setCourses(data))
+    AOS.init()
   }, [])
   return (
     <div className="trandingSlider container px-6 pt-28 pb-10">
-      <div className="mb-14">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        className="mb-10"
+      >
         <h1 className="text-3xl text-center font-bold">Master Programs</h1>
         <div className="flex pt-2 items-center justify-center gap-2">
           <PiGraduationCap size={25} className="text-[#09adfe]" />

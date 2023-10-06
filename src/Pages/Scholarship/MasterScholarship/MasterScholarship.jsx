@@ -2,14 +2,24 @@ import React from 'react'
 import sholarship4 from '../../../assets/image/scholarship4.avif'
 import { PiGraduationCap } from 'react-icons/pi'
 import { FaCentos } from 'react-icons/fa'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const MasterScholarship = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="container px-6 md:pt-6 ">
         {/*         Travel Support for Students  title*/}
 
-        <div>
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h1 className="md:text-3xl text-2xl text-center font-bold tet text-[#000]">
             Scholarship for Master Students
           </h1>
@@ -28,7 +38,12 @@ const MasterScholarship = () => {
             </h1>
             <div className="space-y-2 pt-3">
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="pt-1"
+                >
                   <PiGraduationCap className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -39,7 +54,12 @@ const MasterScholarship = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="pt-1"
+                >
                   <PiGraduationCap className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -49,7 +69,12 @@ const MasterScholarship = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="pt-1"
+                >
                   <PiGraduationCap className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -60,7 +85,12 @@ const MasterScholarship = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="pt-1"
+                >
                   <PiGraduationCap className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -71,7 +101,12 @@ const MasterScholarship = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="pt-1"
+                >
                   <PiGraduationCap className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -81,7 +116,12 @@ const MasterScholarship = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="pt-1"
+                >
                   <PiGraduationCap className="text-[#09adfe]" size={20} />
                 </span>
 
@@ -99,6 +139,8 @@ const MasterScholarship = () => {
           {/* image traverl  */}
           <div className="">
             <img
+              data-aos="flip-down"
+              data-aos-duration="1500"
               src={sholarship4}
               className="md:h-[490px] w-full rounded-lg"
               alt=""
@@ -114,28 +156,48 @@ const MasterScholarship = () => {
           <div className="pt-7 space-y-3 text-lg font-medium">
             {/* Tuition Fees  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>100% Tuition Fees Free</p>
             </div>
             {/* Monthly Stipend */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Monthly Stipend RMB 2000 - RMB 3000</p>
             </div>
             {/* Job Opportunity */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Job Opportunity</p>
             </div>
             {/* Hostel Fees  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Hostel Fees Free</p>
@@ -143,21 +205,36 @@ const MasterScholarship = () => {
 
             {/* Accommodation Fees  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p> Accommodation Fees Free</p>
             </div>
             {/* InternShip Facilities  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Internship Facilities</p>
             </div>
             {/* World Ranking  University  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>World Ranking University</p>

@@ -2,8 +2,14 @@ import React from 'react'
 import sholarship3 from '../../../assets/image/scholarship3.avif'
 import { PiGraduationCap } from 'react-icons/pi'
 import { FaCentos } from 'react-icons/fa'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const DiplomaScholarship = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="container px-6 md:py-16 pt-8">
@@ -111,21 +117,36 @@ const DiplomaScholarship = () => {
           <div className="pt-7 space-y-3 text-lg font-medium">
             {/* Tuition Fees  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>100% Tuition Fees Free</p>
             </div>
             {/* Monthly Stipend  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Monthly Stipend RMB 600 - RMB 700</p>
             </div>
             {/* Hostel Fees  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Hostel Fees Free</p>
@@ -133,21 +154,36 @@ const DiplomaScholarship = () => {
 
             {/* Accommodation Fees  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p> Accommodation Fees Free</p>
             </div>
             {/* InternShip Facilities  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Internship Facilities</p>
             </div>
             {/* Top Class University  */}
             <div className="flex gap-3 ">
-              <span className="pt-1">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
                 <FaCentos className="text-[#09adfe]" size={20} />
               </span>
               <p>Top Class Collage</p>

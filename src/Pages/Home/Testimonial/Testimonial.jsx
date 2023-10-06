@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { BiSolidQuoteRight } from 'react-icons/bi'
 import { PiGraduationCap } from 'react-icons/pi'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Testimonial = () => {
   const [allStudents, setAllStudents] = useState([])
@@ -10,6 +12,7 @@ const Testimonial = () => {
     fetch('students.json')
       .then(res => res.json())
       .then(data => setAllStudents(data))
+    AOS.init()
   }, [])
 
   // Use a setTimeout to change the profile every 500 milliseconds
@@ -29,16 +32,22 @@ const Testimonial = () => {
   return (
     <>
       <div className="container px-6 py-28">
-        <h1 className="text-3xl font-bold text-[#000]">
-          What Our Students Says
-        </h1>
-        <div className="flex pt-2 items-center gap-2">
-          <PiGraduationCap size={25} className="text-[#09adfe]" />
-          <h1 className="text-xl font-bold text-[#09adfe]">Testimonial</h1>
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <h1 className="text-3xl text-center font-bold text-[#000]">
+            What Our Students Says
+          </h1>
+          <div className="flex justify-center pt-2 items-center gap-2">
+            <PiGraduationCap size={25} className="text-[#09adfe]" />
+            <h1 className="text-xl font-bold text-[#09adfe]">Testimonial</h1>
+          </div>
         </div>
         {/* <h1>{profile?.name}</h1> */}
 
-        <div className="pt-12 grid md:grid-cols-3 grid-cols-1 gap-4">
+        <div className="pt-20 grid md:grid-cols-3 grid-cols-1 gap-4">
           {/* sudent 1  */}
           <div className="shadow-lg h-[450px] rounded-lg cursor-pointer bg-[#E8E8E8] hover:bg-[#ffffff] text-[#000] py-3 px-4">
             <div className="">

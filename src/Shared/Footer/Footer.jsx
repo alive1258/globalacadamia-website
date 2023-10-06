@@ -10,8 +10,14 @@ import { BiLogoLinkedin } from 'react-icons/bi'
 import { MdOutlineMailOutline } from 'react-icons/md'
 import logo from '../../assets/image/GALogos.png'
 import Marquee from 'react-fast-marquee'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   const topFunction = () => {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
@@ -26,7 +32,7 @@ const Footer = () => {
           </h1>
           <div className="pt-4">
             <div className="container px-5 text-lg text-white ">
-              <Marquee speed={40}>
+              <Marquee speed={50}>
                 Global Academia is a leading consultancy firm based in
                 Bangladesh, dedicated to providing top-notch educational and
                 career advisory services to students and professionals
@@ -55,7 +61,13 @@ const Footer = () => {
                 <div>
                   <div className="flex items-center gap-2">
                     <Link to="/">
-                      <img className="h-16 " src={logo} alt="" />
+                      <img
+                        data-aos="zoom-in"
+                        data-aos-duration="2400"
+                        className="h-16 "
+                        src={logo}
+                        alt=""
+                      />
                     </Link>
 
                     <div className="text-2xl text-[#09adfe] font-bold ">
@@ -73,7 +85,12 @@ const Footer = () => {
 
                     {/* -------email------  */}
                     <div className="flex items-center gap-2 pt-4">
-                      <div className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center">
+                      <div
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                        className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
+                      >
                         <MdOutlineMailOutline className="" size={25} />
                       </div>
                       <div className="text-[16px] font-medium">
@@ -81,7 +98,12 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-2 pt-4">
-                      <div className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center">
+                      <div
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                        className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
+                      >
                         <GoLocation className="" size={25} />
                       </div>
                       <div className="text-[16px] font-medium">
@@ -150,7 +172,12 @@ const Footer = () => {
                       <div className="space-y-4">
                         {/* -------phone------  */}
                         <div className="flex items-center gap-2">
-                          <div className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center">
+                          <div
+                            data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                            className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
+                          >
                             <AiTwotonePhone className="" size={25} />
                           </div>
                           <div className="text-[16px] font-medium">
@@ -161,7 +188,12 @@ const Footer = () => {
 
                         {/* -------location------  */}
                         <div className="flex items-center gap-2">
-                          <div className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center">
+                          <div
+                            data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                            className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
+                          >
                             <GoLocation className="" size={25} />
                           </div>
                           <div className="text-[16px] font-medium">
@@ -172,7 +204,12 @@ const Footer = () => {
                         </div>
                         {/* -------location------  */}
                         <div className="flex items-center gap-2">
-                          <div className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center">
+                          <div
+                            data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                            className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
+                          >
                             <GoLocation className="" size={25} />
                           </div>
                           <div className="text-[16px] font-medium">

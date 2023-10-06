@@ -2,8 +2,14 @@
 import React from 'react'
 import { FaPlane } from 'react-icons/fa'
 import travel from '../../../assets/image/travel3.avif'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const VisaProcess = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="container px-6 md:pt-28 pt-8">
@@ -13,7 +19,12 @@ const VisaProcess = () => {
           <h1 className="md:text-3xl text-xl text-center font-bold tet text-[#000]">
             Travel Support for Students
           </h1>
-          <div className="flex pt-2 items-center justify-center gap-2">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            className="flex pt-2 items-center justify-center gap-2"
+          >
             <FaPlane size={25} className="text-[#09adfe]" />
             <h1 className="md:text-xl text-lg font-bold text-[#09adfe]">
               Travel
@@ -28,7 +39,12 @@ const VisaProcess = () => {
             </h1>
             <div className="space-y-2 pt-3">
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-right"
+                  data-aos-offset="100"
+                  data-aos-easing="ease-in-sine"
+                  className="pt-1"
+                >
                   <FaPlane className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -38,7 +54,12 @@ const VisaProcess = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-right"
+                  data-aos-offset="100"
+                  data-aos-easing="ease-in-sine"
+                  className="pt-1"
+                >
                   <FaPlane className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -48,7 +69,12 @@ const VisaProcess = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-right"
+                  data-aos-offset="100"
+                  data-aos-easing="ease-in-sine"
+                  className="pt-1"
+                >
                   <FaPlane className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -58,7 +84,12 @@ const VisaProcess = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-right"
+                  data-aos-offset="100"
+                  data-aos-easing="ease-in-sine"
+                  className="pt-1"
+                >
                   <FaPlane className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -68,7 +99,12 @@ const VisaProcess = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-right"
+                  data-aos-offset="100"
+                  data-aos-easing="ease-in-sine"
+                  className="pt-1"
+                >
                   <FaPlane className="text-[#09adfe]" size={20} />
                 </span>
                 <p>
@@ -78,7 +114,12 @@ const VisaProcess = () => {
                 </p>
               </div>
               <div className="flex gap-3">
-                <span className="pt-1">
+                <span
+                  data-aos="fade-right"
+                  data-aos-offset="100"
+                  data-aos-easing="ease-in-sine"
+                  className="pt-1"
+                >
                   <FaPlane className="text-[#09adfe]" size={20} />
                 </span>
 

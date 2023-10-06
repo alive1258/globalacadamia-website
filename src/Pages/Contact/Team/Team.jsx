@@ -3,11 +3,21 @@ import { AiOutlineTeam } from 'react-icons/ai'
 import { GiForwardField } from 'react-icons/gi'
 import zamirul from '../../../assets/image/zamirul2.jpg'
 import sayem from '../../../assets/image/sayemPic.jpg'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Team = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div className="container px-6 my-16">
-      <div>
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <h1 className="md:text-3xl text-2xl text-center font-bold  text-[#000]">
           Meet Our Academic Team
         </h1>
@@ -19,7 +29,11 @@ const Team = () => {
 
       <div className="mt-8 flex flex-wrap items-center justify-center gap-8">
         {/* sudent 1  */}
-        <div className="shadow-lg w-96 h-[500px] rounded-lg cursor-pointer bg-[#ddf4f7] hover:bg-[#ffffff] text-[#000] py-3 px-4">
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="1500"
+          className="shadow-lg w-96 h-[500px] rounded-lg cursor-pointer bg-[#ddf4f7] hover:bg-[#ffffff] text-[#000] py-3 px-4"
+        >
           <div className="">
             <GiForwardField className="text-[#09adfe] " size={40} />
           </div>
@@ -53,7 +67,11 @@ const Team = () => {
           </div>
         </div>
         {/* sudent 2  */}
-        <div className="shadow-lg w-96 h-[500px] rounded-lg cursor-pointer bg-[#ddf4f7] hover:bg-[#ffffff] text-[#000] py-3 px-4">
+        <div
+          data-aos="fade-up-left"
+          data-aos-duration="1500"
+          className="shadow-lg w-96 h-[500px] rounded-lg cursor-pointer bg-[#ddf4f7] hover:bg-[#ffffff] text-[#000] py-3 px-4"
+        >
           <div className="">
             <GiForwardField className="text-[#09adfe] " size={40} />
           </div>
