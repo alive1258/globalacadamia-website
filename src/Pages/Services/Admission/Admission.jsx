@@ -17,11 +17,7 @@ const Admission = () => {
       <div className="container px-6 md:pt-20 pt-8">
         {/*         Travel Support for Students  title*/}
 
-        <div
-          ata-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-        >
+        <div>
           <h1 className="md:text-3xl text-xl text-center font-bold tet text-[#000]">
             Expert Admissions Advisors
           </h1>
@@ -39,8 +35,6 @@ const Admission = () => {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               <div>
                 <img
-                  data-aos="zoom-in"
-                  data-aos-duration="1500"
                   className="md:h-[240px] md:w-[310px] rounded-lg"
                   src={v1}
                   alt=""
@@ -48,8 +42,6 @@ const Admission = () => {
               </div>
               <div>
                 <img
-                  data-aos="zoom-in"
-                  data-aos-duration="1500"
                   className="md:h-[240px] md:w-[310px] rounded-lg"
                   src={v2}
                   alt=""
@@ -57,8 +49,6 @@ const Admission = () => {
               </div>
               <div>
                 <img
-                  data-aos="zoom-in"
-                  data-aos-duration="1500"
                   className="md:h-[240px] md:w-[310px] rounded-lg"
                   src={v3}
                   alt=""
@@ -66,8 +56,6 @@ const Admission = () => {
               </div>
               <div>
                 <img
-                  data-aos="zoom-in"
-                  data-aos-duration="1500"
                   className="md:h-[240px] md:w-[310px] rounded-lg  "
                   src={v4}
                   alt=""
@@ -81,13 +69,7 @@ const Admission = () => {
               <div className="pt-6 space-y-3">
                 <div>
                   <div className="flex  items-center  gap-2">
-                    <PiGraduationCap
-                      ata-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500"
-                      size={25}
-                      className="text-[#09adfe]"
-                    />
+                    <PiGraduationCap size={25} className="text-[#09adfe]" />
                     <h1 className="text-lg font-semibold text-[#09adfe]">
                       Our Admission Services
                     </h1>
@@ -100,13 +82,7 @@ const Admission = () => {
                 </div>
                 <div>
                   <div className="flex  items-center  gap-2">
-                    <PiGraduationCap
-                      data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500"
-                      size={25}
-                      className="text-[#09adfe]"
-                    />
+                    <PiGraduationCap size={25} className="text-[#09adfe]" />
                     <h1 className="text-lg font-semibold text-[#09adfe]">
                       Personalized Admission Strategies
                     </h1>
@@ -119,13 +95,7 @@ const Admission = () => {
                 </div>
                 <div>
                   <div className="flex  items-center  gap-2">
-                    <PiGraduationCap
-                      data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500"
-                      size={25}
-                      className="text-[#09adfe]"
-                    />
+                    <PiGraduationCap size={25} className="text-[#09adfe]" />
                     <h1 className="text-lg font-semibold text-[#09adfe]">
                       Tailored Solutions for Your Goals
                     </h1>
@@ -138,13 +108,7 @@ const Admission = () => {
                 </div>
                 <div>
                   <div className="flex  items-center  gap-2">
-                    <PiGraduationCap
-                      data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500"
-                      size={25}
-                      className="text-[#09adfe]"
-                    />
+                    <PiGraduationCap size={25} className="text-[#09adfe]" />
                     <h1 className="text-lg font-semibold text-[#09adfe]">
                       Navigating Scholarships and Financial Aid
                     </h1>
@@ -156,13 +120,7 @@ const Admission = () => {
                 </div>
                 <div>
                   <div className="flex  items-center  gap-2">
-                    <PiGraduationCap
-                      data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500"
-                      size={25}
-                      className="text-[#09adfe]"
-                    />
+                    <PiGraduationCap size={25} className="text-[#09adfe]" />
                     <h1 className="text-lg font-semibold text-[#09adfe]">
                       Making Dreams a Reality
                     </h1>
@@ -181,13 +139,7 @@ const Admission = () => {
 
         <div className="flex flex-wrap pt-3 items-center gap-4 ">
           <div className="flex pt-2 items-center justify-center gap-2">
-            <PiGraduationCap
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-              size={25}
-              className="text-[#09adfe]"
-            />
+            <PiGraduationCap size={25} className="text-[#09adfe]" />
             <h1 className="text-xl font-bold text-[#09adfe]">
               Diploma Programs
             </h1>

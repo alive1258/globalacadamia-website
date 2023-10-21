@@ -1,5 +1,5 @@
-import React from 'react'
-import contact from '../../../assets/image/contact1.avif'
+import React, { useEffect } from 'react'
+
 import { AiFillYoutube, AiTwotonePhone } from 'react-icons/ai'
 import { RiHomeOfficeFill } from 'react-icons/ri'
 import { FaFacebookF } from 'react-icons/fa'
@@ -10,16 +10,16 @@ import {
   MdOutlineContactPhone,
   MdOutlineMailOutline,
 } from 'react-icons/md'
-import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import contact from '../../../assets/image/contact1.avif'
 
 const InfoContact = () => {
   useEffect(() => {
     AOS.init()
   }, [])
   return (
-    <div className="container px-6">
+    <div className="container pt-20 px-6">
       <div>
         <h1 className="md:text-3xl text-2xl text-center font-bold tet text-[#000]">
           Connect with Global Academia
@@ -32,7 +32,7 @@ const InfoContact = () => {
         </div>
       </div>
       {/*       Funding Your Diploma Journey  */}
-      <div className="md:py-16 pt-8 grid md:grid-cols-2 grid-cols-1 gap-8 ">
+      <div className="md:pt-20 pt-8 grid md:grid-cols-2 grid-cols-1 gap-8 ">
         <div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mb-5">
             <div>
@@ -104,12 +104,7 @@ const InfoContact = () => {
           </h1>
           <div className="space-y-2 pt-3">
             <div className="flex gap-3">
-              <span
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-                className="pt-1 "
-              >
+              <span className="pt-1 ">
                 <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
@@ -120,12 +115,7 @@ const InfoContact = () => {
               </p>
             </div>
             <div className="flex gap-3">
-              <span
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-                className="pt-1"
-              >
+              <span className="pt-1">
                 <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
@@ -136,12 +126,7 @@ const InfoContact = () => {
               </p>
             </div>
             <div className="flex gap-3">
-              <span
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-                className="pt-1"
-              >
+              <span className="pt-1">
                 <MdContactMail className="text-[#09adfe]" size={20} />
               </span>
               <p>
@@ -156,7 +141,7 @@ const InfoContact = () => {
         <div className="">
           <img
             data-aos="zoom-in"
-            data-aos-duration="1500"
+            data-aos-duration="2400"
             src={contact}
             className="md:h-[490px] w-full rounded-lg"
             alt=""

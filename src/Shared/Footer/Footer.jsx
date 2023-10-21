@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <>
       <div>
-        <div className="bg-[#09adfe] px-4 py-4 relative top-2 ">
+        <div className="bg-[#09adfe] px-4 py-4  ">
           <h1 className="md:text-3xl text-xl text-white   font-semibold text-center">
             Study In China from Bangladesh
           </h1>
@@ -70,8 +70,12 @@ const Footer = () => {
                       />
                     </Link>
 
-                    <div className="text-2xl text-[#09adfe] font-bold ">
-                      Global Acadamia
+                    <div>
+                      <h1 className="text-2xl text-[#09adfe] font-bold ">
+                        {' '}
+                        Global Acadamia
+                      </h1>
+                      <p className="text-yellow-400">Education Consultants</p>
                     </div>
                   </div>
                   <div className="pt-6 text-[16px] font-medium">
@@ -146,8 +150,13 @@ const Footer = () => {
                           </Link>
                         </div>
                         <div>
-                          <Link onClick={topFunction} to="contact">
+                          <Link onClick={topFunction} to="/contact">
                             Contact
+                          </Link>
+                        </div>
+                        <div>
+                          <Link onClick={topFunction} to="/tramsCondition">
+                            Terms and Conditions
                           </Link>
                         </div>
                       </div>

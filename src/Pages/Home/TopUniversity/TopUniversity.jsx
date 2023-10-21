@@ -14,9 +14,9 @@ const TopUniversity = () => {
     <>
       <div className="container mt-28 pb-20">
         <div
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <h1 className="text-3xl text-center text-[#000] font-bold">
             Top University

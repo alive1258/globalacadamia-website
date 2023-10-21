@@ -22,6 +22,7 @@ const VisaProcess = () => {
           <div
             data-aos="fade-right"
             data-aos-offset="200"
+            data-aos-duration="1500"
             data-aos-easing="ease-in-sine"
             className="flex pt-2 items-center justify-center gap-2"
           >
@@ -42,6 +43,7 @@ const VisaProcess = () => {
                 <span
                   data-aos="fade-right"
                   data-aos-offset="100"
+                  data-aos-duration="1500"
                   data-aos-easing="ease-in-sine"
                   className="pt-1"
                 >
@@ -57,6 +59,7 @@ const VisaProcess = () => {
                 <span
                   data-aos="fade-right"
                   data-aos-offset="100"
+                  data-aos-duration="1500"
                   data-aos-easing="ease-in-sine"
                   className="pt-1"
                 >
@@ -72,6 +75,7 @@ const VisaProcess = () => {
                 <span
                   data-aos="fade-right"
                   data-aos-offset="100"
+                  data-aos-duration="1500"
                   data-aos-easing="ease-in-sine"
                   className="pt-1"
                 >
@@ -87,6 +91,7 @@ const VisaProcess = () => {
                 <span
                   data-aos="fade-right"
                   data-aos-offset="100"
+                  data-aos-duration="1500"
                   data-aos-easing="ease-in-sine"
                   className="pt-1"
                 >
@@ -102,6 +107,7 @@ const VisaProcess = () => {
                 <span
                   data-aos="fade-right"
                   data-aos-offset="100"
+                  data-aos-duration="1500"
                   data-aos-easing="ease-in-sine"
                   className="pt-1"
                 >
@@ -117,6 +123,7 @@ const VisaProcess = () => {
                 <span
                   data-aos="fade-right"
                   data-aos-offset="100"
+                  data-aos-duration="1500"
                   data-aos-easing="ease-in-sine"
                   className="pt-1"
                 >

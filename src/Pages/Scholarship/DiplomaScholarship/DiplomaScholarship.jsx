@@ -164,6 +164,18 @@ const DiplomaScholarship = () => {
               </span>
               <p> Accommodation Fees Free</p>
             </div>
+            {/*  Job Opportunity  */}
+            <div className="flex gap-3 ">
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="pt-1"
+              >
+                <FaCentos className="text-[#09adfe]" size={20} />
+              </span>
+              <p>Job Opportunity</p>
+            </div>
             {/* InternShip Facilities  */}
             <div className="flex gap-3 ">
               <span

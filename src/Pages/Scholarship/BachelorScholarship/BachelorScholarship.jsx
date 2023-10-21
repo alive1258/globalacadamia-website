@@ -35,7 +35,7 @@ const BachelorScholarship = () => {
           {/* image traverl  */}
           <div className="">
             <img
-              data-aos="flip-left"
+              data-aos="flip-down"
               data-aos-duration="1500"
               src={sholarship2}
               className="md:h-[490px] w-full rounded-lg"

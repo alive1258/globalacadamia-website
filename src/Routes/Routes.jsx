@@ -8,6 +8,7 @@ import Services from '../Pages/Services/Services/Services'
 import StudyAbroad from '../Pages/StudyAbroad/StudyAbroad/StudyAbroad'
 import Scholarship from '../Pages/Scholarship/Scholarship/Scholarship'
 import Contact from '../Pages/Contact/Contact/Contact'
+import TramsCondition from '../Pages/TramsCondition/TramsCondition'
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/tramsCondition',
+        element: <TramsCondition />,
       },
       {
         path: '/course/:courseId',

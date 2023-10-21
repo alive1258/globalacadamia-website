@@ -4,10 +4,14 @@ import AboutVarsity from '../AboutVarsity/AboutVarsity'
 import AScholarship from '../AScholarship/AScholarship'
 import CampusTour from '../CampusTour/CampusTour'
 import TopUniversity from '../../Home/TopUniversity/TopUniversity'
+import { Helmet } from 'react-helmet-async'
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>Global Acadamia | About</title>
+      </Helmet>
       <AboutBanner />
       <AboutVarsity />
       <AScholarship />

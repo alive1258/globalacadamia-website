@@ -5,10 +5,14 @@ import TravelSupport from './../TravelSupport/TravelSupport'
 import TopUniversity from '../../Home/TopUniversity/TopUniversity'
 import Admission from '../Admission/Admission'
 import Guideline from '../Guideline/Guideline'
+import { Helmet } from 'react-helmet-async'
 
 const Services = () => {
   return (
     <>
+      <Helmet>
+        <title>Global Acadamia | Services</title>
+      </Helmet>
       <Banner />
       <VisaProcess />
       <TravelSupport />

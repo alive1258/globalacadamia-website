@@ -40,7 +40,7 @@ const Navbar = () => {
     document.documentElement.scrollTop = 0
   }
   return (
-    <header className="flex fixed bg-[#e8e7e7] z-10 items-center w-full h-[70px] leading-10 ">
+    <header className="flex fixed bg-[#000] z-10 items-center w-full h-[70px] leading-10 ">
       <div className="container">
         <div className="text-gray-500  text-sm flex justify-between items-center ">
           {/* logo  */}
@@ -52,7 +52,7 @@ const Navbar = () => {
               <h1 className="text-xl text-[#09adfe] font-bold ">
                 Global Acadamia
               </h1>
-              <p className=" text-yellow-400">Education Consultants</p>
+              <p className="text-yellow-400">Education Consultants</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ const Navbar = () => {
                     className={navClass =>
                       navClass.isActive
                         ? 'text-[#09adfe] text-[16px]  font-bold'
-                        : 'text-[16px] text-[#000] font-bold hover:text-[#09adfe]'
+                        : 'text-[16px] text-[#ffffff] font-bold hover:text-[#09adfe]'
                     }
                   >
                     {link.display}
@@ -83,8 +83,12 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div onClick={topFunction} className="md:hidden mr-8">
-            {!nav ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
+          <div onClick={topFunction} className="md:hidden block  mr-8 ">
+            {!nav ? (
+              <AiOutlineMenu size={25} className="text-[#09adfe]" />
+            ) : (
+              <AiOutlineClose className="text-red-500" size={25} />
+            )}
           </div>
         </div>
 
@@ -94,7 +98,7 @@ const Navbar = () => {
           className={
             !nav
               ? 'hidden'
-              : 'absolute z-10 bg-[#e8e7e7] font-semibold w-full  h-screen md:hidden px-6 pt-4'
+              : 'absolute z-10 bg-[#000] font-semibold w-full  h-screen md:hidden px-6 pt-4'
           }
         >
           <ul className="menu space-y-4  font-bold gap-[2.7rem]">
@@ -106,20 +110,13 @@ const Navbar = () => {
                   className={navClass =>
                     navClass.isActive
                       ? 'text-[#09adfe] text-[16px]  font-bold'
-                      : 'text-[16px]  font-bold hover:text-[#09adfe]'
+                      : 'text-[16px] text-[#ffffff] font-bold hover:text-[#09adfe]'
                   }
                 >
                   {link.display}
                 </NavLink>
               </li>
             ))}
-            <li>
-              <NavLink to="/contact">
-                <button className="bg-[#09adfe] text-[#ffffff] text-[14px] py-2 px-5 rounded-lg">
-                  Admission Open
-                </button>
-              </NavLink>
-            </li>
           </ul>
         </div>
       </div>

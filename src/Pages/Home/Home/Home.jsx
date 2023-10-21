@@ -7,12 +7,18 @@ import MscCourse from '../MscCourse/MscCourse'
 import TopUniversity from '../TopUniversity/TopUniversity'
 import Admission from '../Admission/Admission'
 import Testimonial from '../Testimonial/Testimonial'
+import { Helmet } from 'react-helmet-async'
+import WhyChina from '../WhyChina/WhyChina'
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Global Acadamia | Home</title>
+      </Helmet>
       <Banner />
       <Welcome />
+      <WhyChina />
       <DiplomaCourse />
       <BscCourse />
       <MscCourse />

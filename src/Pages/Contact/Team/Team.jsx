@@ -8,11 +8,13 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Team = () => {
+  // Function to disable text selection
+
   useEffect(() => {
     AOS.init()
   }, [])
   return (
-    <div className="container px-6 my-16">
+    <div className="container px-6 my-24">
       <div
         data-aos="fade-down"
         data-aos-easing="linear"

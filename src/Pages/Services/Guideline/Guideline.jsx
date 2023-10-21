@@ -15,7 +15,11 @@ const Guideline = () => {
       <div className="container px-6 md:py-24 py-8">
         {/*   Guideline For Students title*/}
 
-        <div>
+        <div
+          ata-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h1 className="md:text-3xl text-2xl text-center font-bold tet text-[#000]">
             Guideline For Students
           </h1>

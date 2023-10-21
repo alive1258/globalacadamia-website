@@ -12,7 +12,7 @@ const CourseCard = ({ allCourse }) => {
   return (
     <>
       <div className="md:p-4">
-        <div className="shadow-lg rounded-xl h-[490px]">
+        <div className="shadow-lg rounded-xl h-[490px] py-4">
           <img className="w-full h-[220px] rounded-xl" src={image} alt="" />
           <div className=" px-3">
             <div className=" py-4">
@@ -28,7 +28,7 @@ const CourseCard = ({ allCourse }) => {
               <Link
                 onClick={topFunction}
                 to={`/course/${id}`}
-                className="absolute cursor-pointer top-12 left-32 px-4 py-2 hover:bg-[#09a3f1]  bg-[#09adfe]  rounded-lg text-[15px] font-semibold text-[#ffffff] mr-2 mb-2"
+                className="absolute cursor-pointer md:top-6 top-1 left-32 px-4 py-2 hover:bg-[#09a3f1]  bg-[#09adfe]  rounded-lg text-[15px] font-semibold text-[#ffffff] mr-2 mb-2"
               >
                 View Details
               </Link>
