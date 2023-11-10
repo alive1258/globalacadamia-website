@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import logoGA from '../../assets/image/GALogos.png'
+// import GALogo from '../../assets/image/GA-logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 

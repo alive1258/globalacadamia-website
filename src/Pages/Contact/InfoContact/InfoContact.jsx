@@ -64,12 +64,9 @@ const InfoContact = () => {
                 <div className="pl-6 space-y-1">
                   <div className="flex items-center gap-2">
                     <AiTwotonePhone size={20} className="text-[#09adfe]" />
-                    +88 01611910296
+                    <p>+88 0179-3636735</p>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <AiTwotonePhone size={20} className="text-[#09adfe]" />
-                    +88 01799731158
-                  </div>
+
                   <div className="flex items-center gap-2">
                     <MdOutlineMailOutline
                       size={20}
@@ -83,7 +80,13 @@ const InfoContact = () => {
                   {/* <p className="text-white">Follow us on:</p> */}
 
                   <div className="bg-gray-400 hover:bg-[#28589c] text-white h-8 w-8 rounded-full flex items-center justify-center">
-                    <FaFacebookF />
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/gobalacadamia"
+                    >
+                      {' '}
+                      <FaFacebookF />
+                    </a>
                   </div>
                   <div className="bg-gray-400 hover:bg-[#E1306c] text-white h-8 w-8 rounded-full flex items-center justify-center">
                     <BsInstagram />

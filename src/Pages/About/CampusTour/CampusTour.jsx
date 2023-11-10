@@ -93,8 +93,7 @@ const CampusTour = () => {
                     <AiTwotonePhone className="" size={25} />
                   </div>
                   <div className="text-[16px] text-[#09adfe] font-medium">
-                    <p>+88 01611910296</p>
-                    <p>+88 01799731158</p>
+                    <p>+88 0179-3636735</p>
                   </div>
                 </div>
 

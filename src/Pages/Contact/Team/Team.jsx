@@ -80,15 +80,15 @@ const Team = () => {
           <div>
             <div className="flex items-center justify-center ">
               <div>
-                <img
+                {/* <img
                   src={sayem}
                   alt=""
                   className="bg-white w-32 h-32 rounded-full flex items-center justify-center"
-                />
+                /> */}
               </div>
             </div>
             <div className="text-center py-4">
-              <h1 className="text-2xl font-semibold">夏海云</h1>
+              {/* <h1 className="text-2xl font-semibold">夏海云</h1> */}
               {/* <h1>{profile.name}</h1> */}
               <p className="text-xl font-semibold text-[#09adfe]">
                 创始人 & 国际协调员

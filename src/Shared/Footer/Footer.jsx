@@ -190,8 +190,7 @@ const Footer = () => {
                             <AiTwotonePhone className="" size={25} />
                           </div>
                           <div className="text-[16px] font-medium">
-                            <p>+88 01611910296</p>
-                            <p>+88 01799731158</p>
+                            <p>+88 0179-3636735</p>
                           </div>
                         </div>
 
@@ -244,7 +243,13 @@ const Footer = () => {
                     <p className="text-white">Follow us on:</p>
 
                     <div className="bg-gray-400 hover:bg-[#28589c] text-white h-8 w-8 rounded-full flex items-center justify-center">
-                      <FaFacebookF />
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/gobalacadamia"
+                      >
+                        {' '}
+                        <FaFacebookF />
+                      </a>
                     </div>
                     <div className="bg-gray-400 hover:bg-[#E1306c] text-white h-8 w-8 rounded-full flex items-center justify-center">
                       <BsInstagram />
