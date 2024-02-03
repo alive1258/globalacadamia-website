@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Global Acadamia | Services</title>
+        <title>Global Academia | Services</title>
       </Helmet>
       <Banner />
       <VisaProcess />

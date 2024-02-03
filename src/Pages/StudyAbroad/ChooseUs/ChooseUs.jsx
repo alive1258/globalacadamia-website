@@ -50,17 +50,17 @@ const ChooseUs = () => {
                 </h1>
 
                 <p className="py-4">
-                  At Global Acadamia, we are dedicated to providing our
+                  At Global Academia, we are dedicated to providing our
                   customers with 24/7 service for all time. We're committed to
                   ensuring that STUDENTS receive a one-stop solution for their
-                  education needs. Ensuring your Acadamia journey is as smooth
+                  education needs. Ensuring your Academia journey is as smooth
                   as possible.STUDENTS can access a comprehensive range of
                   services through our platform, from finding their desired
                   institution to seamless admission procedures, visa processing,
                   and even convenient airport pick-up, simplifying their entire
                   academic journey.Whether you have questions, need product
                   information, or encounter any issues, our customer support
-                  team is here to assist you day or night, making your Acadamia
+                  team is here to assist you day or night, making your Academia
                   experience seamless.
                 </p>
               </div>
@@ -122,12 +122,12 @@ const ChooseUs = () => {
                 </h1>
                 {/* <h1>{profile.name}</h1> */}
                 <p className="py-4">
-                  At Global Acadamia, we're here to help you achieve your dreams
+                  At Global Academia, we're here to help you achieve your dreams
                   with confidence. Our dedicated team supports your journey
                   toward higher education, ensuring a bright future.Confidence
-                  is the key to unlocking your dreams, and at Global Acadamia,
+                  is the key to unlocking your dreams, and at Global Academia,
                   we provide the guidance and resources to make it happen. Your
-                  aspirations are within reach with us.With Global Acadamia by
+                  aspirations are within reach with us.With Global Academia by
                   your side, you can confidently pursue your educational dreams.
                   We offer a range of services to empower you on your path to
                   success.

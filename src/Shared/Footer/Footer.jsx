@@ -73,7 +73,7 @@ const Footer = () => {
                     <div>
                       <h1 className="text-2xl text-[#09adfe] font-bold ">
                         {' '}
-                        Global Acadamia
+                        Global Academia
                       </h1>
                       <p className="text-yellow-400">Education Consultants</p>
                     </div>
@@ -98,7 +98,7 @@ const Footer = () => {
                         <MdOutlineMailOutline className="" size={25} />
                       </div>
                       <div className="text-[16px] font-medium">
-                        <p>globalacadamia@gmail.com</p>
+                        <p>globalAcademia@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 pt-4">
@@ -234,7 +234,7 @@ const Footer = () => {
                 <div>
                   <p className="text-white">
                     © Copyright {currentYear}, All Rights Reserved by Global
-                    Acadamia
+                    Academia
                   </p>
                 </div>
 
@@ -245,7 +245,7 @@ const Footer = () => {
                     <div className="bg-gray-400 hover:bg-[#28589c] text-white h-8 w-8 rounded-full flex items-center justify-center">
                       <a
                         target="_blank"
-                        href="https://www.facebook.com/gobalacadamia"
+                        href="https://www.facebook.com/gobalAcademia"
                       >
                         {' '}
                         <FaFacebookF />

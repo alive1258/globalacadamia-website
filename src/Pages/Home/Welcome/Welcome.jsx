@@ -14,7 +14,7 @@ const Welcome = () => {
       <div className="md:pt-28 pt-10">
         <div>
           <h1 className="text-center md:text-3xl text-xl font-bold">
-            Discover Global Acadamia
+            Discover Global Academia
           </h1>
           <div className="flex pt-2 items-center justify-center gap-2">
             <PiGraduationCap size={25} className="text-[#09adfe]" />

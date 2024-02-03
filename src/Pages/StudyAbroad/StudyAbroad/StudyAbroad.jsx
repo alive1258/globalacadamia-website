@@ -9,7 +9,7 @@ const StudyAbroad = () => {
   return (
     <>
       <Helmet>
-        <title>Global Acadamia | Study Abroad</title>
+        <title>Global Academia | Study Abroad</title>
       </Helmet>
       <Banner />
       <ChinaAbroad />

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Global Acadamia | About</title>
+        <title>Global Academia | About</title>
       </Helmet>
       <AboutBanner />
       <AboutVarsity />

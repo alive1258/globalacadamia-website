@@ -51,9 +51,9 @@ const Navbar = () => {
             </Link>
             <div>
               <h1 className="text-xl text-[#09adfe] font-bold ">
-                Global Acadamia
+                Global Academia
               </h1>
-              <p className="text-yellow-400">Education Consultants</p>
+              <p className="text-yellow-400">Education Consultants Firm</p>
             </div>
           </div>
 

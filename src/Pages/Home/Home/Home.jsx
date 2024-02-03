@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Global Acadamia | Home</title>
+        <title>Global Academia | Home</title>
       </Helmet>
       <Banner />
       <Welcome />

@@ -11,7 +11,7 @@ const Scholarship = () => {
   return (
     <>
       <Helmet>
-        <title>Global Acadamia | Scholarship</title>
+        <title>Global Academia | Scholarship</title>
       </Helmet>
       <Banner />
       <DiplomaScholarship />

@@ -10,7 +10,7 @@ function TramsCondition() {
             <span className="font-semibold">
               Purpose of Terms and Conditions:
             </span>{' '}
-            The terms and conditions on the Global Acadamia website outline the
+            The terms and conditions on the Global Academia website outline the
             rules, guidelines, and legal agreements governing the use of the
             website's services related to studying abroad in China.
           </p>
@@ -37,7 +37,7 @@ function TramsCondition() {
           <p>
             <span className="font-semibold">Services Offered :</span> The terms
             and conditions would describe the services provided by Global
-            Acadamia, which may include program placement, visa assistance, and
+            Academia, which may include program placement, visa assistance, and
             accommodation arrangements.
           </p>
           <p>

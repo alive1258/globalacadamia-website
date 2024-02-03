@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Global Acadamia | Contact</title>
+        <title>Global Academia | Contact</title>
       </Helmet>
       <Banner />
       <InfoContact />

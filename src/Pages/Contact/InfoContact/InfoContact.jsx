@@ -72,7 +72,7 @@ const InfoContact = () => {
                       size={20}
                       className="text-[#09adfe]"
                     />
-                    globalacadamia@gmail.com
+                    globalAcademia@gmail.com
                   </div>
                 </div>
 
@@ -82,7 +82,7 @@ const InfoContact = () => {
                   <div className="bg-gray-400 hover:bg-[#28589c] text-white h-8 w-8 rounded-full flex items-center justify-center">
                     <a
                       target="_blank"
-                      href="https://www.facebook.com/gobalacadamia"
+                      href="https://www.facebook.com/gobalAcademia"
                     >
                       {' '}
                       <FaFacebookF />
