@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const VisaProcess = () => {
+const TravelSupport = () => {
   useEffect(() => {
     AOS.init()
   }, [])
@@ -147,4 +147,4 @@ const VisaProcess = () => {
   )
 }
 
-export default VisaProcess
+export default TravelSupport

@@ -1,4 +1,3 @@
-import React from 'react'
 import { PiGraduationCap } from 'react-icons/pi'
 import { FaSith } from 'react-icons/fa'
 import visa from '../../../assets/image/visa.avif'

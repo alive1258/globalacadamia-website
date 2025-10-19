@@ -5,6 +5,7 @@ import { RouterProvider } from 'react-router-dom'
 // import App from './App'
 import { HelmetProvider } from 'react-helmet-async'
 import { router } from './Routes/Routes'
+import 'flowbite';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
