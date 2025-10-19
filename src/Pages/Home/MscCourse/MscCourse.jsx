@@ -5,7 +5,7 @@ import { PiGraduationCap } from 'react-icons/pi'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './MscCourse.css'
-import CourseCard from '../../../components/homePage/CourseCard'
+import CourseCard from '../../../components/HomePage/CourseCard'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 

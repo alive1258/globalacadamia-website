@@ -1,14 +1,11 @@
-import React from 'react'
 
 import { Link } from 'react-router-dom'
-
 const CourseCard = ({ allCourse }) => {
   const { id, name, image, sub_detail, sub_name } = allCourse
   const topFunction = () => {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
   }
-
   return (
     <>
       <div className="md:p-4">
