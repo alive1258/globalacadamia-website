@@ -4,8 +4,8 @@ import TopUniversity from '../../Home/TopUniversity/TopUniversity'
 import Admission from '../Admission/Admission'
 import Guideline from '../Guideline/Guideline'
 import { Helmet } from 'react-helmet-async'
-import TravelSupport from './../TravelSupport/TravelSupport'
-import VisaProcess from './../VisaProcess/VisaProcess'
+import TravelSupport from '../TravelSupport/TravelSupport'
+import VisaProcess from '../VisaProcess/VisaProcess'
 
 const Services = () => {
   return (
