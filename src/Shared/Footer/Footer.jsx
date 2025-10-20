@@ -245,7 +245,7 @@ const Footer = () => {
                     <div className="bg-gray-400 hover:bg-[#28589c] text-white h-8 w-8 rounded-full flex items-center justify-center">
                       <a
                         target="_blank"
-                        href="https://www.facebook.com/gobalAcademia"
+                        href="https://www.facebook.com/profile.php?id=61575149877963"
                       >
                         {' '}
                         <FaFacebookF />
@@ -258,7 +258,14 @@ const Footer = () => {
                       <AiFillYoutube />
                     </div>
                     <div className="bg-gray-400 hover:bg-blue-700 text-white h-8 w-8 rounded-full flex items-center justify-center">
-                      <BiLogoLinkedin />
+                        <a
+                        target="_blank"
+                        href="https://www.linkedin.com/company/globalacadamia/about/?viewAsMember=true"
+                      >
+                        {' '}
+                        <BiLogoLinkedin />
+                      </a>
+                      
                     </div>
                   </div>
                 </div>
