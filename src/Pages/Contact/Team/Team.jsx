@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import { AiOutlineTeam } from 'react-icons/ai'
 import { GiForwardField } from 'react-icons/gi'
 import sayem from '../../../assets/image/sayemPic.jpg'
-// import zamirul from '../../../assets/image/zamirul2.jpg'
+import zamirul from '../../../assets/image/zamirul2.jpg'
 import manPic1 from '../../../assets/image/man1.webp'
 
 const Team = () => {
@@ -43,7 +43,7 @@ const Team = () => {
             <div className="flex items-center justify-center ">
               <div>
                 <img
-                  src={manPic1}
+                  src={zamirul}
                   alt=""
                   className="bg-white w-32 h-32 rounded-full flex items-center justify-center"
                 />
