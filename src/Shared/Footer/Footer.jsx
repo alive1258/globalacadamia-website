@@ -1,281 +1,393 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { FaFacebookF, FaPinterestP } from 'react-icons/fa'
-import { BsInstagram } from 'react-icons/bs'
-import { AiFillYoutube } from 'react-icons/ai'
-import { GoLocation } from 'react-icons/go'
-import { GrLocation } from 'react-icons/gr'
-import { AiTwotonePhone } from 'react-icons/ai'
-import { BiLogoLinkedin } from 'react-icons/bi'
-import { MdOutlineMailOutline } from 'react-icons/md'
-import logo from '../../assets/image/GALogos.png'
-import Marquee from 'react-fast-marquee'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { useEffect } from 'react'
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+  FaTwitter,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaGraduationCap,
+  FaShieldAlt,
+  FaAward,
+  FaHeadset,
+} from "react-icons/fa";
+import { BsArrowRightShort, BsSend, BsClock, BsGlobe } from "react-icons/bs";
+import {
+  MdOutlineMailOutline,
+  MdLocationOn,
+  MdPhoneInTalk,
+} from "react-icons/md";
+import { HiAcademicCap } from "react-icons/hi";
+import { PiStudentBold } from "react-icons/pi";
+import logo from "../../assets/image/GALogos.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
   useEffect(() => {
-    AOS.init()
-  }, [])
-  const topFunction = () => {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-  }
-  const currentYear = new Date().getFullYear()
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const currentYear = new Date().getFullYear();
+
+  const quickLinks = [
+    { name: "Home", path: "/", icon: <BsArrowRightShort /> },
+    { name: "About Us", path: "/about", icon: <BsArrowRightShort /> },
+    { name: "Services", path: "/services", icon: <BsArrowRightShort /> },
+    { name: "Study Abroad", path: "/study", icon: <BsArrowRightShort /> },
+    { name: "Scholarships", path: "/scholarship", icon: <BsArrowRightShort /> },
+    {
+      name: "Universities",
+      path: "/universities",
+      icon: <BsArrowRightShort />,
+    },
+    { name: "Contact", path: "/contact", icon: <BsArrowRightShort /> },
+    { name: "Blog", path: "/blog", icon: <BsArrowRightShort /> },
+  ];
+
+  const services = [
+    "100% Scholarship Assistance",
+    "University Selection",
+    "Visa Processing",
+    "Document Preparation",
+    "Accommodation Arrangement",
+    "Pre-departure Briefing",
+    "Airport Pickup",
+    "Post-arrival Support",
+  ];
+
+  const socialLinks = [
+    {
+      icon: <FaFacebookF />,
+      href: "https://www.facebook.com/profile.php?id=61575149877963",
+      color: "hover:bg-[#1877F2]",
+      name: "Facebook",
+    },
+    {
+      icon: <FaInstagram />,
+      href: "#",
+      color: "hover:bg-gradient-to-r from-purple-500 to-pink-500",
+      name: "Instagram",
+    },
+    {
+      icon: <FaYoutube />,
+      href: "#",
+      color: "hover:bg-[#FF0000]",
+      name: "YouTube",
+    },
+    {
+      icon: <FaLinkedinIn />,
+      href: "https://www.linkedin.com/company/globalacadamia/about/?viewAsMember=true",
+      color: "hover:bg-[#0077B5]",
+      name: "LinkedIn",
+    },
+    {
+      icon: <FaTwitter />,
+      href: "#",
+      color: "hover:bg-[#1DA1F2]",
+      name: "Twitter",
+    },
+  ];
+
   return (
     <>
-      <div>
-        <div className="bg-[#09adfe] px-4 py-4  ">
-          <h1 className="md:text-3xl text-xl text-white   font-semibold text-center">
-            Study In China from Bangladesh
-          </h1>
-          <div className="pt-4">
-            <div className="container px-5 text-lg text-white ">
-              <Marquee speed={50}>
-                Global Academia is a leading consultancy firm based in
-                Bangladesh, dedicated to providing top-notch educational and
-                career advisory services to students and professionals
-                worldwide. With a team of experienced consultants and a deep
-                understanding of international education systems, we specialize
-                in guiding aspiring students through the complex process of
-                selecting the right academic institutions and programs.Our
-                consultancy services extend beyond academics, offering expert
-                advice on visa applications, financial planning, and cultural
-                adaptation to ensure a smooth transition for students pursuing
-                education abroad.At Global Academia, we take pride in our
-                commitment to excellence and personalized support, tailoring our
-                services to meet the unique needs and aspirations of each
-                client.Whether you're embarking on your educational journey or
-                seeking professional growth opportunities, trust Global Academia
-                to be your trusted partner in achieving your global ambitions.
-                Welcome to a world of endless possibilities with us!
-              </Marquee>
-            </div>
-          </div>
-        </div>
-        <div className="bg-black text-white md:pb-2 pb-20 pt-14">
-          <div className="container px-6">
-            <div className="py-6">
-              <div className="grid border-b md:grid-cols-2 grid-cols-1 gap-2  pb-8">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <Link to="/">
-                      <img
-                        data-aos="zoom-in"
-                        data-aos-duration="2400"
-                        className="h-16 "
-                        src={logo}
-                        alt=""
-                      />
-                    </Link>
-
-                    <div>
-                      <h1 className="text-2xl text-[#09adfe] font-bold ">
-                        {' '}
-                        Global Academia
-                      </h1>
-                      <p className="text-yellow-400">Education Consultants</p>
-                    </div>
-                  </div>
-                  <div className="pt-6 text-[16px] font-medium">
-                    <p>
-                      Explore the transformation power of education as we
-                      provide insights,
-                      <br /> resources, Visa, scholarships, and solutions to
-                      learners of all students. <br /> A World of Education
-                      Awaits You.
-                    </p>
-
-                    {/* -------email------  */}
-                    <div className="flex items-center gap-2 pt-4">
-                      <div
-                        data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1500"
-                        className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
-                      >
-                        <MdOutlineMailOutline className="" size={25} />
-                      </div>
-                      <div className="text-[16px] font-medium">
-                        <p>globalAcademia@gmail.com</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2 pt-4">
-                      <div
-                        data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1500"
-                        className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
-                      >
-                        <GoLocation className="" size={25} />
-                      </div>
-                      <div className="text-[16px] font-medium">
-                        <p>Notun Vangabrai,</p>
-                        <p>Sirajgnaj ,Bangladesh</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="grid md:grid-cols-3 grid-cols-1 md:pt-6 gap-4">
-                    <div cl>
-                      <p className="text-2xl font-bold pb-6 text-white">
-                        Get To Know Us
-                      </p>
-                      <div className="space-y-2 text-[16px] font-medium cursor-pointer">
-                        <div>
-                          <Link onClick={topFunction} to="/">
-                            Home
-                          </Link>
-                        </div>
-                        <div>
-                          <Link onClick={topFunction} to="/about">
-                            About
-                          </Link>
-                        </div>
-                        <div>
-                          <Link onClick={topFunction} to="/services">
-                            Services
-                          </Link>
-                        </div>
-                        <div>
-                          <Link onClick={topFunction} to="/study">
-                            Study Abroad
-                          </Link>
-                        </div>
-                        <div>
-                          <Link onClick={topFunction} to="/scholarship">
-                            Scholarship
-                          </Link>
-                        </div>
-                        <div>
-                          <Link onClick={topFunction} to="/contact">
-                            Contact
-                          </Link>
-                        </div>
-                        <div>
-                          <Link onClick={topFunction} to="/tramsCondition">
-                            Terms and Conditions
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold pb-6 text-white">
-                        Let Us Help You
-                      </p>
-                      <div className="space-y-2 text-[16px] font-medium cursor-pointer">
-                        <p>Get 100% Scholarship </p>
-                        <p>World Ranking University</p>
-                        <p>100% Visa Success</p>
-                        <p>Get Your Course</p>
-                        <p>Get Hostel Cost Free</p>
-                        <p>Accommodation Fees Free</p>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold pb-6 text-white">
-                        Contact Us
-                      </p>
-                      <div className="space-y-4">
-                        {/* -------phone------  */}
-                        <div className="flex items-center gap-2">
-                          <div
-                            data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1500"
-                            className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
-                          >
-                            <AiTwotonePhone className="" size={25} />
-                          </div>
-                          <div className="text-[16px] font-medium">
-                            <p>+88 0179-3636735</p>
-                          </div>
-                        </div>
-
-                        {/* -------location------  */}
-                        <div className="flex items-center gap-2">
-                          <div
-                            data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1500"
-                            className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
-                          >
-                            <GoLocation className="" size={25} />
-                          </div>
-                          <div className="text-[16px] font-medium">
-                            <p>Ma Sufiya Mohol,</p>
-                            <p>1st Floor,</p>
-                            <p>Plastic Factory Road,</p>
-                          </div>
-                        </div>
-                        {/* -------location------  */}
-                        <div className="flex items-center gap-2">
-                          <div
-                            data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1500"
-                            className="bg-[#09adfe] h-10 w-10 rounded-full flex justify-center items-center"
-                          >
-                            <GoLocation className="" size={25} />
-                          </div>
-                          <div className="text-[16px] font-medium">
-                            <p>Notun Vangabrai,</p>
-                            <p>Sirajgnaj ,Bangladesh</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      {/* Newsletter Section */}
+      <div className="bg-gradient-to-r from-blue-600 to-cyan-500 py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              <div className="text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  Get Free Consultation
+                </h3>
+                <p className="text-blue-100">
+                  Subscribe to our newsletter for updates on scholarships and
+                  admission deadlines
+                </p>
               </div>
-              <div className="pt-4 pb-4 flex justify-between flex-wrap">
-                <div>
-                  <p className="text-white">
-                    © Copyright {currentYear}, All Rights Reserved by Global
-                    Academia
-                  </p>
-                </div>
-
-                <div>
-                  <div className="flex gap-4">
-                    <p className="text-white">Follow us on:</p>
-
-                    <div className="bg-gray-400 hover:bg-[#28589c] text-white h-8 w-8 rounded-full flex items-center justify-center">
-                      <a
-                        target="_blank"
-                        href="https://www.facebook.com/profile.php?id=61575149877963"
-                      >
-                        {' '}
-                        <FaFacebookF />
-                      </a>
-                    </div>
-                    <div className="bg-gray-400 hover:bg-[#E1306c] text-white h-8 w-8 rounded-full flex items-center justify-center">
-                      <BsInstagram />
-                    </div>
-                    <div className="bg-gray-400 hover:bg-[#ff0000] text-white h-8 w-8 rounded-full flex items-center justify-center">
-                      <AiFillYoutube />
-                    </div>
-                    <div className="bg-gray-400 hover:bg-blue-700 text-white h-8 w-8 rounded-full flex items-center justify-center">
-                        <a
-                        target="_blank"
-                        href="https://www.linkedin.com/company/globalacadamia/about/?viewAsMember=true"
-                      >
-                        {' '}
-                        <BiLogoLinkedin />
-                      </a>
-                      
-                    </div>
-                  </div>
-                </div>
+              <div className="flex gap-3 w-full md:w-auto">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="px-6 py-3 rounded-lg flex-1 md:w-80 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2">
+                  <BsSend />
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
-  )
-}
 
-export default Footer
+      {/* Stats Bar */}
+      <div className="bg-gray-900 py-8">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              {
+                icon: <FaGraduationCap />,
+                value: "5000+",
+                label: "Students Placed",
+              },
+              {
+                icon: <FaShieldAlt />,
+                value: "98%",
+                label: "Visa Success Rate",
+              },
+              {
+                icon: <FaAward />,
+                value: "100%",
+                label: "Scholarship Success",
+              },
+              {
+                icon: <HiAcademicCap />,
+                value: "50+",
+                label: "Partner Universities",
+              },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="text-center"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <div className="text-3xl text-blue-400 mb-2">{stat.icon}</div>
+                <div className="text-2xl font-bold text-white">
+                  {stat.value}
+                </div>
+                <div className="text-gray-400 text-sm">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer */}
+      <footer className="bg-gray-950 text-white pt-16 pb-8">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            {/* Company Info */}
+            <div data-aos="fade-up" data-aos-delay="100">
+              <div className="flex items-center gap-3 mb-6">
+                <img
+                  src={logo}
+                  alt="Global Academia"
+                  className="h-12 w-12 object-contain"
+                />
+                <div>
+                  <h2 className="text-2xl font-bold text-white">
+                    Global Academia
+                  </h2>
+                  <p className="text-blue-400 text-sm">Education Consultants</p>
+                </div>
+              </div>
+              <p className="text-gray-400 mb-6">
+                Leading educational consultancy in Bangladesh, dedicated to
+                providing world-class advisory services for students aspiring to
+                study abroad with 100% scholarships.
+              </p>
+              <div className="flex gap-4">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`bg-gray-800 p-3 rounded-full text-white ${social.color} transition-colors duration-300 hover:text-white transform hover:scale-110`}
+                    aria-label={social.name}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div data-aos="fade-up" data-aos-delay="200">
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <BsGlobe className="text-blue-400" />
+                Quick Links
+              </h3>
+              <ul className="space-y-3">
+                {quickLinks.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      to={link.path}
+                      onClick={scrollToTop}
+                      className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2 group"
+                    >
+                      <span className="text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {link.icon}
+                      </span>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div data-aos="fade-up" data-aos-delay="300">
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <PiStudentBold className="text-blue-400" />
+                Our Services
+              </h3>
+              <ul className="space-y-3">
+                {services.map((service, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <BsArrowRightShort className="text-blue-400 mt-1 flex-shrink-0" />
+                    <span className="text-gray-400">{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div data-aos="fade-up" data-aos-delay="400">
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <FaHeadset className="text-blue-400" />
+                Contact Us
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="bg-blue-900 p-2 rounded-lg">
+                    <FaPhoneAlt className="text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Phone Number</p>
+                    <p className="text-gray-400">+88 0179-3636735</p>
+                    <p className="text-gray-400">+88 0171-2345678</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="bg-blue-900 p-2 rounded-lg">
+                    <FaEnvelope className="text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Email Address</p>
+                    <p className="text-gray-400">globalAcademia@gmail.com</p>
+                    <p className="text-gray-400">info@globalacademia.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="bg-blue-900 p-2 rounded-lg">
+                    <FaMapMarkerAlt className="text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Office Address</p>
+                    <p className="text-gray-400">Ma Sufiya Mohol, 1st Floor</p>
+                    <p className="text-gray-400">
+                      Plastic Factory Road, Notun Vangabrai
+                    </p>
+                    <p className="text-gray-400">Sirajgnaj, Bangladesh</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="bg-blue-900 p-2 rounded-lg">
+                    <BsClock className="text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Office Hours</p>
+                    <p className="text-gray-400">
+                      Sat - Thu: 9:00 AM - 6:00 PM
+                    </p>
+                    <p className="text-gray-400">Friday: Closed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-800 pt-8 mt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="text-center md:text-left">
+                <p className="text-gray-400">
+                  © Copyright {currentYear}, Global Academia. All Rights
+                  Reserved.
+                </p>
+                <div className="flex gap-4 mt-2">
+                  <Link
+                    to="/privacy-policy"
+                    className="text-gray-400 hover:text-blue-400 text-sm"
+                    onClick={scrollToTop}
+                  >
+                    Privacy Policy
+                  </Link>
+                  <Link
+                    to="/terms-conditions"
+                    className="text-gray-400 hover:text-blue-400 text-sm"
+                    onClick={scrollToTop}
+                  >
+                    Terms & Conditions
+                  </Link>
+                  <Link
+                    to="/disclaimer"
+                    className="text-gray-400 hover:text-blue-400 text-sm"
+                    onClick={scrollToTop}
+                  >
+                    Disclaimer
+                  </Link>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="text-gray-400">Accepted Payments:</div>
+                <div className="flex gap-2">
+                  {["Visa", "Mastercard", "PayPal", "Bank Transfer"].map(
+                    (method, index) => (
+                      <div
+                        key={index}
+                        className="bg-gray-800 px-3 py-1 rounded text-sm text-gray-400"
+                      >
+                        {method}
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      {/* Back to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50 hover:scale-110"
+        aria-label="Back to top"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M5 10l7-7m0 0l7 7m-7-7v18"
+          />
+        </svg>
+      </button>
+    </>
+  );
+};
+
+export default Footer;

@@ -142,7 +142,6 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div>
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-8">Contact Information</h3>
               <div className="grid sm:grid-cols-2 gap-6">
                 {contactInfo.map((info, index) => (
                   <div
@@ -166,6 +165,21 @@ const ContactSection = () => {
                 ))}
               </div>
             </div>
+            {/* Map Preview */}
+            <div className="mt-12">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <h4 className="text-xl font-bold mb-4">Our Location</h4>
+                <div className="h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center">
+                  <div className="text-center">
+                    <FiMapPin className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                    <p className="text-gray-300">Beijing, China</p>
+                    <p className="text-sm text-gray-400">
+                      Tsinghua University Area
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Social Media */}
             <div>
@@ -181,22 +195,6 @@ const ContactSection = () => {
                     <span className="font-medium">{social.label}</span>
                   </a>
                 ))}
-              </div>
-            </div>
-
-            {/* Map Preview */}
-            <div className="mt-12">
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <h4 className="text-xl font-bold mb-4">Our Location</h4>
-                <div className="h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <FiMapPin className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                    <p className="text-gray-300">Beijing, China</p>
-                    <p className="text-sm text-gray-400">
-                      Tsinghua University Area
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
