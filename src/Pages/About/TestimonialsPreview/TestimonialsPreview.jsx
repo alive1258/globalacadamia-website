@@ -118,7 +118,7 @@ const TestimonialsPreview = () => {
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-100 rounded-full translate-x-48 translate-y-48 opacity-20"></div>
 
             {/* Content */}
-            <div className="relative z-10">
+            <div className="relative ">
               <div className="grid md:grid-cols-2">
                 {/* Left Side - Student Info */}
                 <div className="p-12 bg-gradient-to-br from-blue-50 to-cyan-50">

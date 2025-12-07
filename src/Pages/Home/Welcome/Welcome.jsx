@@ -159,7 +159,7 @@ const Welcome = () => {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {statsData.map((stat) => (
             <div key={stat.id} className="relative group" onClick={topFunction}>
               {/* Card */}

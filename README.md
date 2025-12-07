@@ -1,8 +1,10 @@
-# 🎓 Global Academia - Education Consultants Platform
+# 🎓 Global Academia - Enterprise Education Consulting Platform
 
-![Global Academia Banner](/public/images/global_aca.png)
+![Global Academia Banner](/public/images/global-academia.png)
 
-A modern, responsive education consultancy platform built with Next.js that connects students with international universities. This platform streamlines the entire study abroad process from inquiry to enrollment.
+## 📋 Executive Summary
+
+Global Academia is a cutting-edge SaaS platform revolutionizing the international education consulting industry. Our solution bridges students, consultants, and universities through an AI-powered ecosystem that streamlines the entire study abroad journey—from initial inquiry to successful enrollment and alumni engagement.
 
 ## 🚀 Live Demo
 
@@ -79,36 +81,6 @@ npm run build
 # Start production server
 npm start
 ```
-
-global-academia/
-├── src/
-│ ├── app/ # Next.js 14 App Router
-│ │ ├── (auth)/ # Authentication routes
-│ │ ├── (dashboard)/ # Dashboard routes
-│ │ ├── (main)/ # Public pages
-│ │ ├── api/ # API routes
-│ │ └── layout.tsx # Root layout
-│ ├── components/ # Reusable UI components
-│ │ ├── ui/ # Shadcn/ui components
-│ │ ├── forms/ # Form components
-│ │ ├── dashboard/ # Dashboard components
-│ │ └── shared/ # Shared components
-│ ├── lib/ # Utilities and helpers
-│ │ ├── utils/ # Utility functions
-│ │ ├── validations/ # Zod schemas
-│ │ └── api/ # API clients
-│ ├── hooks/ # Custom React hooks
-│ ├── stores/ # Zustand stores
-│ ├── types/ # TypeScript types
-│ └── styles/ # Global styles
-├── public/ # Static assets
-│ ├── images/
-│ ├── icons/
-│ └── fonts/
-├── prisma/ # Database schema
-├── tests/ # Test files
-├── .github/ # GitHub workflows
-└── docs/ # Documentation
 
 ## 📈 Performance Optimization
 
