@@ -356,33 +356,11 @@ const ChinaAbroad = () => {
                 ))}
               </div>
             </div>
-
-            {/* Benefits Section */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-6">Key Benefits</h3>
-
-              <div className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
-                      {benefit.icon}
-                    </div>
-                    <div>
-                      <h4 className="font-bold mb-1">{benefit.title}</h4>
-                      <p className="text-gray-300 text-sm">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="relative rounded-2xl overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-red-600/90 to-yellow-600/90"></div>
+        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-r from-blue-600 to-cyan-500  p-8 md:p-12 shadow-2xl">
           {/* <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div> */}
 
           <div className="relative  p-12 text-center">

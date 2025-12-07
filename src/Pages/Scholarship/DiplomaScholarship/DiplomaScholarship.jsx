@@ -335,34 +335,6 @@ const DiplomaScholarship = () => {
                 ))}
               </div>
             </div>
-
-            {/* Eligibility Criteria */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-6">Eligibility Criteria</h3>
-
-              <div className="space-y-3">
-                {eligibilityCriteria.map((criteria, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <PiCheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-200">{criteria}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-white/20">
-                <div className="flex items-center gap-3">
-                  <FaRegClock className="w-5 h-5 text-gray-300" />
-                  <div>
-                    <div className="text-sm text-gray-300">
-                      <span className="font-bold text-white">
-                        Limited seats
-                      </span>{" "}
-                      available for 2024 intake
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
