@@ -1,8 +1,73 @@
+/* Admission.css */
 .studentPic {
-  background-image: url('../../../assets/image/student.jpg');
-  height: 450px;
+  background-image: url("../../../assets/image/student.jpg");
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 100% !important;
-  /* display: block; */
   background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+/* Glass effect enhancement */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Animation for gradient background */
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Glowing effect for important elements */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(9, 173, 254, 0.3);
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 30px rgba(9, 173, 254, 0.5);
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .studentPic {
+    background-attachment: scroll;
+  }
+
+  .backdrop-blur-lg {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }

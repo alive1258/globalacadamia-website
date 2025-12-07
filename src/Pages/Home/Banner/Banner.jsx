@@ -1,104 +1,187 @@
-import React, { useRef, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import { Navigation } from 'swiper/modules'
-// import varsity2 from '../../../assets/image/hBanner1.jpg'
-// import varsity3 from '../../../assets/image/varsity-3.jpeg'
-// import varsity4 from '../../../assets/image/varsity-4.jpg'
-import './Banner.css'
-// import { AiTwotonePhone } from 'react-icons/ai'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "./Banner.css";
 
 const Banner = () => {
-  return (
-    <>
-      <div className=" md:pt-[70px]">
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-          <SwiperSlide>
-            <div className="slide1 flex items-center md:h-[90vh] h-[45vh]">
-              <div className="container md:pt-2 pt-6 text-[#ffffff]">
-                <div className="md:text-5xl md:space-y-5 text-lg  pl-12 font-bold">
-                  <h1> 100% Scholarship</h1>
-                  <h1>Study in China</h1>
-                </div>
-                <div className="md:text-2xl text-lg md:space-x-4 md:pt-5 pl-12 font-bold">
-                  <span>Diploma ||</span>
-                  <span>Bachelor ||</span>
-                  <span>Master ||</span>
-                  <span>Ph.D</span>
-                </div>
-                <h2 className="md:text-2xl md:pt-5 text-lg pl-12 mb-3 font-bold">
-                  A World of Education Awaits You
-                </h2>
-                {/* <p className="ml-12 w-3/6 py-4 px-2 bg-gray-600 opacity-50 font-semibold ">
-                  Unlock the doors to world-class education with our exclusive
-                  100% scholarship opportunities for international students to
-                  study in China.Embark on a life-changing experience, explore
-                  new horizons, and expand your global perspective through our
-                  scholarship programs, which cover tuition fees, accommodation,
-                  and more.
-                </p> */}
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide2 flex items-center md:h-[90vh] h-[45vh]">
-              <div className="container md:pt-2 pt-6 text-[#ffffff]">
-                <div className="md:text-5xl md:space-y-5 text-lg  pl-12 font-bold">
-                  <h1> 100% Scholarship</h1>
-                  <h1>Study in China</h1>
-                </div>
-                <div className="md:text-2xl text-lg md:space-x-4 md:pt-5 pl-12 font-bold">
-                  <span>Diploma ||</span>
-                  <span>Bachelor ||</span>
-                  <span>Master ||</span>
-                  <span>Ph.D</span>
-                </div>
-                <h2 className="md:text-2xl md:pt-5 text-lg pl-12 mb-3 font-bold">
-                  A World of Education Awaits You
-                </h2>
-                {/* <p className="ml-12 w-3/6 py-4 px-2 bg-gray-600 opacity-50 font-semibold ">
-                  Unlock the doors to world-class education with our exclusive
-                  100% scholarship opportunities for international students to
-                  study in China.Embark on a life-changing experience, explore
-                  new horizons, and expand your global perspective through our
-                  scholarship programs, which cover tuition fees, accommodation,
-                  and more.
-                </p> */}
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide3 flex items-center md:h-[90vh] h-[45vh]">
-              <div className="container md:pt-2 pt-6 text-[#ffffff]">
-                <div className="md:text-5xl md:space-y-5 text-lg  pl-12 font-bold">
-                  <h1> 100% Scholarship</h1>
-                  <h1>Study in China</h1>
-                </div>
-                <div className="md:text-2xl text-lg md:space-x-4 md:pt-5 pl-12 font-bold">
-                  <span>Diploma ||</span>
-                  <span>Bachelor ||</span>
-                  <span>Master ||</span>
-                  <span>Ph.D</span>
-                </div>
-                <h2 className="md:text-2xl md:pt-5 text-lg pl-12 mb-3 font-bold">
-                  A World of Education Awaits You
-                </h2>
-                {/* <p className="ml-12 w-3/6 py-4 px-2 bg-gray-600 opacity-50 font-semibold ">
-                  Unlock the doors to world-class education with our exclusive
-                  100% scholarship opportunities for international students to
-                  study in China.Embark on a life-changing experience, explore
-                  new horizons, and expand your global perspective through our
-                  scholarship programs, which cover tuition fees, accommodation,
-                  and more.
-                </p> */}
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </>
-  )
-}
+  const slides = [
+    {
+      id: 1,
+      className: "slide1",
+      title: "100% Scholarship Program",
+      subtitle: "Study in China",
+      degrees: ["Diploma", "Bachelor", "Master", "Ph.D"],
+      description: "Fully-funded opportunities for international students",
+      cta: "Apply Now",
+    },
+    {
+      id: 2,
+      className: "slide2",
+      title: "World-Class Education",
+      subtitle: "Top Chinese Universities",
+      degrees: ["Engineering", "Medicine", "Business", "Technology"],
+      description:
+        "Study at globally ranked institutions with modern facilities",
+      cta: "Explore Universities",
+    },
+    {
+      id: 3,
+      className: "slide3",
+      title: "Cultural Experience",
+      subtitle: "Live & Learn in China",
+      degrees: ["Language", "Culture", "Networking", "Career"],
+      description:
+        "Immerse yourself in rich heritage while building your future",
+      cta: "Learn More",
+    },
+  ];
 
-export default Banner
+  return (
+    <div className="relative">
+      <Swiper
+        navigation={true}
+        modules={[Navigation, Autoplay, EffectFade]}
+        effect="fade"
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        speed={1000}
+        className="banner-swiper"
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div
+              className={`${slide.className} relative flex items-center md:h-[90vh] h-[60vh] min-h-[500px]`}
+            >
+              {/* Overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/30 z-0"></div>
+
+              <div className="container relative z-10 mx-auto px-4 md:px-8 lg:px-12">
+                <div className="max-w-3xl">
+                  {/* Badge */}
+                  <div className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full mb-6">
+                    Limited Seats Available
+                  </div>
+
+                  {/* Main Content */}
+                  <div className="space-y-4 md:space-y-6">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                      {slide.title}
+                      <br />
+                      <span className="text-yellow-300">{slide.subtitle}</span>
+                    </h1>
+
+                    <p className="text-xl md:text-2xl text-gray-200 font-medium max-w-2xl">
+                      {slide.description}
+                    </p>
+
+                    {/* Degrees/Categories */}
+                    <div className="flex flex-wrap gap-3 md:gap-4 pt-4">
+                      {slide.degrees.map((degree, index) => (
+                        <div
+                          key={index}
+                          className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2"
+                        >
+                          <span className="text-white font-semibold text-base md:text-lg">
+                            {degree}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Stats */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
+                      <div className="text-center">
+                        <div className="text-2xl md:text-3xl font-bold text-yellow-300">
+                          500+
+                        </div>
+                        <div className="text-white text-sm md:text-base">
+                          Universities
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl md:text-3xl font-bold text-yellow-300">
+                          50,000+
+                        </div>
+                        <div className="text-white text-sm md:text-base">
+                          Students
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl md:text-3xl font-bold text-yellow-300">
+                          100%
+                        </div>
+                        <div className="text-white text-sm md:text-base">
+                          Scholarship
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl md:text-3xl font-bold text-yellow-300">
+                          200+
+                        </div>
+                        <div className="text-white text-sm md:text-base">
+                          Programs
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 pt-8">
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105">
+                        {slide.cta}
+                      </button>
+                      <button className="bg-transparent border-2 border-white hover:bg-white/20 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                        View Programs
+                      </button>
+                    </div>
+
+                    {/* Trust Indicator */}
+                    <div className="pt-6 flex items-center gap-2">
+                      <div className="flex -space-x-2">
+                        {[1, 2, 3, 4, 5].map((i) => (
+                          <div
+                            key={i}
+                            className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white"
+                          ></div>
+                        ))}
+                      </div>
+                      <span className="text-gray-200 text-sm md:text-base">
+                        <span className="font-bold">1,200+</span> students
+                        enrolled this month
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Scroll Indicator */}
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <div className="text-white">
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
+
+export default Banner;

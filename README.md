@@ -13,6 +13,15 @@ A modern, responsive education consultancy platform built with Next.js that conn
 
 Global Academia is a comprehensive platform designed to revolutionize how education consultants connect students with international universities. The platform provides end-to-end solutions for student counseling, university search, application tracking, and visa guidance.
 
+### Frontend
+
+- React.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Query
+- React Hook Form
+
 ### 🎯 Key Statistics
 
 - **75% increase** in student inquiries
@@ -49,17 +58,6 @@ Global Academia is a comprehensive platform designed to revolutionize how educat
 
 ## 🛠️ Technology Stack
 
-### Frontend
-
-````bash
-React.js
-TypeScript
-Tailwind CSS
-Framer Motion
-React Query
-React Hook Form
-
-
 ## Getting Started
 
 First, run the development server:
@@ -80,7 +78,7 @@ npm run build
 
 # Start production server
 npm start
-````
+```
 
 global-academia/
 ├── src/

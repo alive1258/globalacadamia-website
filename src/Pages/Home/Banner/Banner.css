@@ -1,4 +1,4 @@
-.slide1 {
+/* .slide1 {
   background-image: url('../../../assets/image/hBnner12.jpg');
   background-repeat: no-repeat;
   width: 100% !important;
@@ -16,4 +16,104 @@
   background-repeat: no-repeat;
   width: 100% !important;
   background-size: cover;
+} */
+
+/* Banner.css */
+
+.banner-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-swiper .swiper-button-next,
+.banner-swiper .swiper-button-prev {
+  color: white;
+  background: rgba(73, 71, 71, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.banner-swiper .swiper-button-next:hover,
+.banner-swiper .swiper-button-prev:hover {
+  background: rgba(73, 70, 70, 0.8);
+  transform: scale(1.1);
+}
+
+.banner-swiper .swiper-button-next:after,
+.banner-swiper .swiper-button-prev:after {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Slide backgrounds - update these with your actual images */
+.slide1 {
+  background: linear-gradient(rgba(68, 64, 64, 0.6), rgba(56, 54, 54, 0.6)),
+    url("../../../assets/image/hBnner12.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide2 {
+  background: linear-gradient(rgba(68, 64, 64, 0.6), rgba(56, 54, 54, 0.6)),
+    url("https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=2066&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide3 {
+  background: linear-gradient(rgba(68, 64, 64, 0.6), rgba(56, 54, 54, 0.6)),
+    url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner-swiper .swiper-button-next,
+  .banner-swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+
+  .banner-swiper .swiper-button-next:after,
+  .banner-swiper .swiper-button-prev:after {
+    font-size: 20px;
+  }
+}
+
+/* Animation for text */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swiper-slide-active .container > * {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.swiper-slide-active .container > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.swiper-slide-active .container > *:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.swiper-slide-active .container > *:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.swiper-slide-active .container > *:nth-child(5) {
+  animation-delay: 0.8s;
 }
