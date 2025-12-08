@@ -10,7 +10,7 @@ const Banner = () => {
           <div className="relative bottom-40  text-[#ffffff] w-52 mx-auto">
             <div className="flex gap-4 items-center">
               <h1 className="uppercase md:text-3xl text-2xl font-bold">
-                Our Services
+                About Us
               </h1>
             </div>
             <div className="flex items-center gap-2 pt-2">
