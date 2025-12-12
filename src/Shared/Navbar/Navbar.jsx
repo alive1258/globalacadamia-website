@@ -1,128 +1,200 @@
-import React, { useState } from 'react'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
-import logoGA from '../../assets/image/GALogos.png'
-// import GALogo from '../../assets/image/GA-logo.png'
-import { Link, NavLink } from 'react-router-dom'
-import './Navbar.css'
+import React, { useState, useCallback } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link, useLocation } from "react-router-dom";
+import logoGA from "../../assets/image/GALogos.png";
+import "./Navbar.css";
 
 const navLinks = [
-  {
-    path: '/',
-    display: 'Home',
-  },
-  {
-    path: '/about',
-    display: 'About',
-  },
-  {
-    path: '/services',
-    display: 'Services',
-  },
-  {
-    path: '/study',
-    display: 'Study Abroad',
-  },
-  {
-    path: '/scholarship',
-    display: 'Scholarship',
-  },
-  {
-    path: '/contact',
-    display: 'Contact',
-  },
-]
+  { path: "/", display: "Home" },
+  { path: "/about", display: "About" },
+  { path: "/services", display: "Services" },
+  { path: "/study", display: "Study Abroad" },
+  { path: "/scholarship", display: "Scholarship" },
+  { path: "/contact", display: "Contact" },
+];
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const location = useLocation();
 
-  const topFunction = () => {
-    setNav(!nav)
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-  }
+  // Simple handler to close sidebar
+  const handleLinkClick = useCallback(() => {
+    setIsSidebarOpen(false);
+  }, []);
+
+  const toggleSidebar = useCallback(() => {
+    setIsSidebarOpen((prev) => !prev);
+  }, []);
+
+  const scrollToTop = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
-    <header className="flex fixed bg-[#000] z-10 items-center w-full h-[70px] leading-10 ">
-      <div className="container">
-        <div className="text-gray-500  text-sm flex justify-between items-center ">
-          {/* logo  */}
-          <div className="flex items-center gap-2 md:pl-1 pl-4">
-            <Link to="/">
-              <img className="w-16 h-12 cursor-pointer" src={logoGA} alt="" />
+    <>
+      <header className="fixed top-0 left-0 right-0 bg-black z-50 h-[70px] shadow-lg">
+        <div className="container mx-auto px-4 h-full">
+          <div className="flex justify-between items-center h-full">
+            {/* Logo - Optimized with priority image */}
+            <Link
+              to="/"
+              onClick={scrollToTop}
+              className="flex items-center gap-3"
+              aria-label="Global Academia Home"
+            >
+              <img
+                className="w-16 h-12 cursor-pointer"
+                src={logoGA}
+                alt="Global Academia Logo"
+              />
+              <div className="hidden sm:block">
+                <h1 className="text-xl text-[#09adfe] font-bold leading-tight">
+                  Global Academia
+                </h1>
+                <p className="text-yellow-400 text-sm leading-tight">
+                  Education Consultants Firm
+                </p>
+              </div>
             </Link>
-            <div>
-              <h1 className="text-xl text-[#09adfe] font-bold ">
-                Global Academia
-              </h1>
-              <p className="text-yellow-400">Education Consultants Firm</p>
-            </div>
-          </div>
 
-          {/* nav item  */}
-          <div className="flex items-center gap-4">
-            <ul className="menu hidden md:flex items-center font-bold gap-[2.7rem]">
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <NavLink
-                    onClick={topFunction}
-                    to={link.path}
-                    className={navClass =>
-                      navClass.isActive
-                        ? 'text-[#09adfe] text-[16px]  font-bold'
-                        : 'text-[16px] text-[#ffffff] font-bold hover:text-[#09adfe]'
-                    }
+            {/* Desktop Navigation */}
+            <nav
+              className="hidden lg:flex items-center"
+              aria-label="Main navigation"
+            >
+              <ul className="flex items-center space-x-6">
+                {navLinks.map((link) => (
+                  <li key={link.path}>
+                    <Link
+                      to={link.path}
+                      onClick={scrollToTop}
+                      className={`text-sm md:text-[15px] font-semibold transition-colors duration-150 ${
+                        location.pathname === link.path
+                          ? "text-[#09adfe]"
+                          : "text-white hover:text-[#09adfe]"
+                      }`}
+                      aria-current={
+                        location.pathname === link.path ? "page" : undefined
+                      }
+                    >
+                      {link.display}
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <Link
+                    to="/contact"
+                    onClick={scrollToTop}
+                    className="bg-[#09adfe] text-white text-sm font-semibold py-2 px-5 rounded-lg hover:bg-[#0898e6] transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-[#09adfe]"
                   >
-                    {link.display}
-                  </NavLink>
-                </li>
-              ))}
-              <li>
-                <NavLink to="/contact">
-                  <button className="bg-[#09adfe] text-[#ffffff] text-[14px] py-2 px-5 rounded-lg">
                     Admission Open
-                  </button>
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div onClick={topFunction} className="md:hidden block  mr-8 ">
-            {!nav ? (
-              <AiOutlineMenu size={25} className="text-[#09adfe]" />
-            ) : (
-              <AiOutlineClose className="text-red-500" size={25} />
-            )}
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleSidebar}
+              className="lg:hidden text-[#09adfe] p-2 hover:bg-gray-800 rounded-lg transition-colors duration-150"
+              aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isSidebarOpen}
+              aria-controls="mobile-sidebar"
+            >
+              {isSidebarOpen ? (
+                <AiOutlineClose size={24} aria-hidden="true" />
+              ) : (
+                <AiOutlineMenu size={24} aria-hidden="true" />
+              )}
+            </button>
           </div>
         </div>
+      </header>
 
-        {/* mobile menu  */}
+      {/* Mobile Sidebar - Optimized with conditional rendering */}
+      {isSidebarOpen && (
+        <>
+          {/* Overlay */}
+          <div
+            className="fixed inset-0 z-40 bg-black/60 lg:hidden"
+            onClick={handleLinkClick}
+            aria-hidden="true"
+          />
 
-        <div
-          className={
-            !nav
-              ? 'hidden'
-              : 'absolute z-10 bg-[#000] font-semibold w-full  h-screen md:hidden px-6 pt-4'
-          }
-        >
-          <ul className="menu space-y-4  font-bold gap-[2.7rem]">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink
-                  onClick={topFunction}
-                  to={link.path}
-                  className={navClass =>
-                    navClass.isActive
-                      ? 'text-[#09adfe] text-[16px]  font-bold'
-                      : 'text-[16px] text-[#ffffff] font-bold hover:text-[#09adfe]'
-                  }
+          {/* Sidebar */}
+          <aside
+            id="mobile-sidebar"
+            className="fixed top-0 right-0 z-50 h-full w-64 bg-black shadow-xl lg:hidden"
+            aria-label="Mobile navigation"
+            role="dialog"
+            aria-modal="true"
+          >
+            <div className="p-5 h-full flex flex-col">
+              <div className="flex items-center justify-end pr-3 mb-6">
+                <button
+                  onClick={handleLinkClick}
+                  className="text-white hover:text-[#09adfe] p-1"
+                  aria-label="Close menu"
                 >
-                  {link.display}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </header>
-  )
-}
+                  <AiOutlineClose size={22} aria-hidden="true" />
+                </button>
+              </div>
 
-export default Navbar
+              <nav className="flex-1">
+                <ul className="space-y-3">
+                  {navLinks.map((link) => (
+                    <li key={link.path}>
+                      <Link
+                        to={link.path}
+                        onClick={() => {
+                          handleLinkClick();
+                          scrollToTop();
+                        }}
+                        className={`block py-2.5 px-3 rounded transition-colors duration-150 ${
+                          location.pathname === link.path
+                            ? "bg-[#09adfe] text-white"
+                            : "text-white hover:bg-gray-800 hover:text-[#09adfe]"
+                        }`}
+                        aria-current={
+                          location.pathname === link.path ? "page" : undefined
+                        }
+                      >
+                        {link.display}
+                      </Link>
+                    </li>
+                  ))}
+                  <li className="pt-4">
+                    <Link
+                      to="/contact"
+                      onClick={() => {
+                        handleLinkClick();
+                        scrollToTop();
+                      }}
+                      className="block bg-[#09adfe] text-white text-center font-semibold py-2.5 px-3 rounded hover:bg-[#0898e6] transition-colors duration-150"
+                    >
+                      Admission Open
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+
+              <div className="mt-6 pt-6 border-t border-gray-800">
+                <h3 className="text-[#09adfe] font-bold text-sm mb-1">
+                  Global Academia
+                </h3>
+                <p className="text-yellow-400 text-xs">
+                  Education Consultants Firm
+                </p>
+              </div>
+            </div>
+          </aside>
+        </>
+      )}
+
+      {/* Spacer - Fixed height for better CLS */}
+      <div className="h-[70px]" />
+    </>
+  );
+};
+
+export default Navbar;
